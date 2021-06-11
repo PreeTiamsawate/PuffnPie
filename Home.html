@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS for Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+   
+    <link href="./css/home.css" rel="stylesheet" />
+    <title>Home - Puff n' Pie</title>
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar for Desktop==================================================================== -->
+    <nav  class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
+        <div class="container mt-lg-2">
+            <a class="navbar-brand ms-md-3" href="./Home.html">
+                <div class="logo-home"></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link  " aria-current="page" href="./Bakery.html">Bakery</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link" aria-current="page" href="./Meal.html">Meal</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-menu-link " aria-current="page" href="#">Box</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " aria-current="page" href="#">Event</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " aria-current="page" href="#contentFooter">Contact</a>
+                    </li>
+                </ul>
+                <div id="catering-logo"></div>
+           
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar for Mobile==================================================================== -->
+    <nav id="mobileNavbar" class=" container-fluid d-block d-md-none fixed-bottom px-0 ">
+        <div class="w-100 h-100 row justify-content-evenly mx-0 ">
+            <a class="col-2  px-0  " href="./Bakery.html" onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
+                <picture class=" px-0 mx-auto d-block h-auto">
+                    <img id= 'bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt="" srcset="">
+                </picture>
+                <div class='textIcon w-100'>Bakery</div>
+            </a>
+            <a class="col-2  px-0  " href="./Meal.html" onmousedown="document.getElementById('mealIcon').src='./images/Icons/Meal-Hover.png'">
+                <picture class=" px-0 mx-auto d-block h-auto">
+                    <img id= 'mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png" alt="" srcset="">
+                </picture>
+                <div class='textIcon w-100'>Meal</div>
+            </a>
+            <a class="col-2  px-0  " href="./Home.html">
+                <picture class=" px-0 mx-auto d-block h-auto">
+                    <img id= 'homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Active.png" alt="" srcset="">
+                </picture>
+                <div class='textIcon-active w-100'>Home</div>
+            </a>
+            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'">
+                <picture class=" px-0 mx-auto d-block h-auto">
+                    <img id= 'boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt="" srcset="">
+                </picture>
+                <div class='textIcon w-100'>Box</div>
+            </a>
+            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'">
+                <picture class=" px-0 mx-auto d-block h-auto">
+                    <img id= 'eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt="" srcset="">
+                </picture>
+                <div class='textIcon w-100'>Event</div>
+            </a>
+        </div> 
+    </nav>
+
+    <section id="sectionOne" class="d-none d-md-block">
+        <div class="container">
+            <div class=" mx-5 " id="contentOne">
+                <h1 id="goodMorning">Good <br>
+                    Morning.
+                </h1>
+                <div class="bar-light mt-lg-3 mb-4"></div>
+                <div id="weGetYou" class="d-none d-lg-block">We get you covered with our variety of freshly baked bakeries from
+                    our passionate pastry chef.
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Promotion=================================== -->
+    <section id="sectionOneMobile" class="d-block d-md-none w-100 d-block h-auto pb-4 ">
+        <div class="container ">
+            <a href="./Home.html" class=" d-block mb-2">
+                <div class="logo-home-mobile"></div>
+            </a>
+            <div id="promotion-scroll" class="d-flex flex-row overflow-auto h-auto">
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images/v144_464.png" alt="Image not available" class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Paris Pastry <br> Week
+                    </h2>
+                </div>
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images/v144_464.png" alt="Image not available" class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Paris Pastry <br> Week
+                    </h2>
+                </div>
+                <div class="promotion-card flex-shrink-0 mx-2 position-relative">
+                    <img src="./images/v144_464.png" alt="Image not available" class=" d-block w-100 h-100 promotion-card-img">
+
+                    <h2 class="promotion-card-text  w-100 position-absolute bottom-0 ps-3 m-0">
+                        Paris Pastry <br> Week
+                    </h2>
+                </div>
+         
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sectionTwo">
+        
+        <div class="container mx-auto  row">
+            <div class="d-md-none my-3">
+                <h2 id="tasteOfPassion-mobile" class="mt-2 mb-2">
+                    Taste <br>
+                    of Passion 
+                </h2>
+                <div class="bar-light-mobile"></div>
+                
+
+            </div>
+            
+            <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
+                <div id="tasteOfPassion">
+                    <div> Taste </div>
+                    <div> of Passion</div>
+                </div>
+                <div class="bar-dark ms-lg-3 ms-0"></div>
+                <div id="withOurPassion" class=" pe-md-5 pe-lg-1">
+                    <p class="text-wrap">
+                        With our passion of making your everyday dinning delightful <br>
+                        and special, we are proud to deliver our bakery, beverages and meal to fulfill your day.
+                    </p>
+
+
+                    <p class="text-wrap">
+                        If you want to enlighten your meeting with well-crafted meal boxes <br> or sanck box, we also pleased
+                        to <br>
+                        create your impressive events with our customized service just in time.
+                    </p>
+
+
+                    <p class="text-wrap">
+                        Now, let's grab your favorite ones <br> to make you day better!
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+            </div>
+            <div class="col-md-3 col-lg-4 col-6 ps-0 pe-1 px-md-auto contentTwo d-flex flex-column align-items-end justify-content-md-start justify-content-end ">
+                <a href="./Bakery.html"class="foodLink my-1 my-md-3" id="v41_21"></a>
+                <a href="./Meal.html" class="foodLink my-1 my-md-3 " id="v41_25"></a>
+
+
+            </div>
+            <div class="col-md-3 col-lg-4 col-6 pe-0 ps-1 px-md-auto contentTwo d-flex flex-column align-items-start justify-content-md-end justify-content-start">
+                <a href="#" class="foodLink my-1 my-md-3 " id="v41_24"></a>
+                <a href="#" class="foodLink my-1 my-md-3" id="v41_26"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionThree" class="v41_32 d-flex flex-column justify-content-center align-items-center">
+        <div id="letsMeetUs">Let’s meet us
+            in places
+        </div>
+        <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
+       
+    </section>
+
+   
+    
+
+
+    <footer class="py-lg-3 w-100 h-auto pb-5">
+        <div class="container h-auto row mx-auto px-0">
+            <div class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto" >
+                <div>
+                    <div class="Contact">Contact</div>
+                    <div class="bar-light mx-auto mb-3"></div>
+                </div>
+                <div class="d-flex justify-content-between w-50 ">
+                    <div class="v46_26"></div>
+                    <div class="v46_27"></div>
+                    <div class="v46_28"></div>
+                    <div class="v46_29"></div>
+
+                </div>
+               
+
+            </div>
+            <div class="col-lg-2 col-6 h-auto  contacts">
+                <div class="contactDetail">
+                    <p class='mt-4'><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+
+
+                    <p class='mt-4'><b> Marketing Office</b> </p>
+                    <p>
+                        <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-6 contacts">
+                <div class="contactDetail">
+                    <p class='mt-4'><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+
+
+                    <p class='mt-4'><b> Marketing Office</b> </p>
+                    <p>
+                        <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 contacts">
+                <div class="contactDetail">
+                    <p class='mt-4'><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+
+
+                    <p class='mt-4'><b> Marketing Office</b> </p>
+                    <p>
+                        <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 contacts ">
+                <div class="contactDetail">
+                    <p class='mt-4'><b>Head Office</b> </p>
+                    <p> <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+
+
+                    <p class='mt-4'><b> Marketing Office</b> </p>
+                    <p>
+                        <b>Tel :</b> 02-3758964 <br>
+                        <b>Email :</b> xxx@thaiairways.com <br>
+                        <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Javascript for Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
