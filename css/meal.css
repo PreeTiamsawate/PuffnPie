@@ -201,6 +201,7 @@ height: 360px;
 .card-img-big{
 width: 100%;
 max-height: 280px;
+aspect-ratio: 1;
 height: auto;
 border-radius: 20px;
 }

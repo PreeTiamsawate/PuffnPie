@@ -4,7 +4,7 @@ let Shops = [
     {
       branchName: "171 Phahonyothin Rd",
       imgAddress:"./images/Phahonyothin-Rd.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.877132,100.6122509,13.71z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0x15f7a3b378d99a15!8m2!3d13.909141!4d100.6172772!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61973.834214915434!2d100.6122509!3d13.877132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15f7a3b378d99a15!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659203803!5m2!1sen!2sth" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.909141,
       longitude:100.6172772,
       distance: 0,
@@ -13,7 +13,7 @@ let Shops = [
     {
       branchName: "Don Muang",
       imgAddress:"./images/Don-Muang.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+and+Pie/@13.8966603,100.5969406,14.42z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xf2e5b57efdfc73bf!8m2!3d13.8975469!4d100.5896402!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnmaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTmpkbDgyY1hOblJSQUI",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30984.30610632159!2d100.5969406!3d13.8966603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623659410880!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.8975469,
       longitude:100.5896402,
       distance:0,
@@ -22,7 +22,7 @@ let Shops = [
     {
       branchName: "DMK Airport",
       imgAddress:"./images/DMK-Airport.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff%26Pie/@13.9127636,100.5999306,15.42z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xda4e52eed83952e1!8m2!3d13.9185495!4d100.6029657!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15491.075165848455!2d100.5999306!3d13.9127636!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda4e52eed83952e1!2sPuff%26Pie!5e0!3m2!1sen!2sth!4v1623659484763!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.9185495,
       longitude:100.6029657,
       distance:0,
@@ -31,7 +31,7 @@ let Shops = [
     {
       branchName: "Nawamin City Av",
       imgAddress:"./images/Nawain-City.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7922585,100.6342378,12.42z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xa8b18d2af6c40ac6!8m2!3d13.834142!4d100.61082!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123992.89265444528!2d100.6342378!3d13.7922585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8b18d2af6c40ac6!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659534286!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.834142,
       longitude:100.61082,
       distance:0,
@@ -40,7 +40,7 @@ let Shops = [
     {
       branchName: "Fashion Island",
       imgAddress:"./images/Fashion-Island.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7712779,100.6306008,11.92z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xb89576098ebeec43!8m2!3d13.8246644!4d100.678121!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248008.06015190965!2d100.6306008!3d13.7712779!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89576098ebeec43!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659576015!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.8246644,
       longitude:100.678121,
       distance:0,
@@ -49,7 +49,7 @@ let Shops = [
     {
       branchName: "Bon Marche' Mk",
       imgAddress:"./images/BonMarche.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+And+Pie+%E0%B8%9A%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%8A%E0%B9%88/@13.7910608,100.5844061,11.92z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0x7c6cc42a1a9e5df2!8m2!3d13.8385122!4d100.5514109!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247987.05778709744!2d100.5844061!3d13.7910608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c6cc42a1a9e5df2!2zUHVmZiBBbmQgUGllIOC4muC4reC4h-C4oeC4suC4o-C5jOC5gOC4iuC5iA!5e0!3m2!1sen!2sth!4v1623659632306!5m2!1sen!2sth" height="350"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.8385122,
       longitude:100.5514109,
       distance:0,
@@ -58,7 +58,7 @@ let Shops = [
     {
       branchName: "Pracha Chuen",
       imgAddress:"./images/PrachaChuen.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7910608,100.5844061,11.92z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xd06780e82c683898!8m2!3d13.8314719!4d100.539038!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247987.05778709744!2d100.5844061!3d13.7910608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd06780e82c683898!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659677136!5m2!1sen!2sth" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.8314719,
       longitude:100.539038,
       distance:0,
@@ -67,7 +67,7 @@ let Shops = [
     {
       branchName: "TG HQ",
       imgAddress:"./images/TG-HQ.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7910608,100.5844061,11.92z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0x48309b72b92e0d16!8m2!3d13.8056359!4d100.562122!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247987.05778709744!2d100.5844061!3d13.7910608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48309b72b92e0d16!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659824426!5m2!1sen!2sth"  height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.8056359,
       longitude:100.562122,
       distance:0,
@@ -76,7 +76,7 @@ let Shops = [
     {
       branchName: "Samsen Rd",
       imgAddress:"./images/Samsen-Rd.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7595038,100.5149785,13.63z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xfc780c577c7163ab!8m2!3d13.7804774!4d100.5084252!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62005.1365001078!2d100.5149785!3d13.7595038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc780c577c7163ab!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659887068!5m2!1sen!2sth"  height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.7804774,
       longitude:100.5084252,
       distance:0,
@@ -85,7 +85,7 @@ let Shops = [
     {
       branchName: "Century Plaza",
       imgAddress:"./images/Century.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+and+Pie+%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B4%E0%B8%99%E0%B9%84%E0%B8%97%E0%B8%A2/@13.7567882,100.5312749,15z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xfb5cab704fb733ec!8m2!3d13.7614981!4d100.5366126!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.464017064198!2d100.5312749!3d13.7567882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb5cab704fb733ec!2zUHVmZiBhbmQgUGllIOC4iuC4uOC4lOC4reC4suC4q-C4suC4o-C4p-C5iOC4suC4h-C4iOC4suC4geC4hOC4o-C4seC4p-C4geC4suC4o-C4muC4tOC4meC5hOC4l-C4og!5e0!3m2!1sen!2sth!4v1623659976699!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.7614981,
       longitude:100.5366126,
       distance:0,
@@ -94,7 +94,7 @@ let Shops = [
     {
       branchName: "Lan Luang Rd",
       imgAddress:"./images/LanLuang.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7302833,100.5104007,13z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0xf62652cce51f8ff4!8m2!3d13.7562193!4d100.5071719!15sCgxwdWZmIGFuZCBwaWVaHAoMcHVmZiBhbmQgcGllIgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62012.87190951307!2d100.5104007!3d13.7302833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf62652cce51f8ff4!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623660044263!5m2!1sen!2sth"  height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.7562193,
       longitude:100.5071719,
       distance:0,
@@ -103,7 +103,7 @@ let Shops = [
     {
       branchName: "Siri Rat Hospital",
       imgAddress:"./images/SiriRat.jpg",
-      mapUrl: "https://www.google.com/maps/place/Puff+%26+Pie/@13.7148113,100.4871832,12.25z/data=!4m9!1m2!2m1!1spuff+and+pie!3m5!1s0x0:0x952844a7395a2819!8m2!3d13.7579583!4d100.484124!15sCgxwdWZmIGFuZCBwaWWSAQZiYWtlcnk",
+      mapFrame: '<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124033.92242072344!2d100.4871832!3d13.7148113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x952844a7395a2819!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623660109962!5m2!1sen!2sth"  height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
       latitude:13.7579583,
       longitude:100.484124,
       distance:0,
@@ -199,10 +199,10 @@ let Shops = [
   
   
   const createToGoShopElements = function(shopArray){
-    
+    const toGoMap = document.querySelector('#toGo-map')
     for(shop of shopArray){
       const card = document.createElement('div');
-      const mapUrl = document.createElement('a');
+      const mapFrame = document.createElement('div');
       const shopImg = document.createElement('img');
       const cardDetail = document.createElement('div');
       const cardText = document.createElement('span');
@@ -213,7 +213,8 @@ let Shops = [
       const distance = document.createElement('div');
   
       card.classList.add("card-shops-small", "flex-shrink-0", "mx-2", "position-relative")
-      mapUrl.setAttribute("href", shop.mapUrl);
+      mapFrame.innerHTML = shop.mapFrame;
+      mapFrame.classList.add("d-none");
       shopImg.setAttribute("src", shop.imgAddress);
       shopImg.classList.add('d-block', 'card-img-shop')
       cardDetail.classList.add('card-text-shop',   'w-100', 'h-auto', 'pt-1', 'position-absolute', 'bottom-0');
@@ -234,9 +235,15 @@ let Shops = [
       cardLocation.appendChild(distance);
       cardDetail.appendChild(cardText);
       cardDetail.appendChild(cardLocation);
-      mapUrl.appendChild(shopImg);
-      card.appendChild(mapUrl);
+
+      card.appendChild(mapFrame);
+      card.appendChild(shopImg);
       card.appendChild(cardDetail);
+
+      card.addEventListener('click', function(){
+        toGoMap.innerHTML = this.children[0].innerHTML;
+      })
+
       toGoShops.appendChild(card);
     
     }
@@ -245,10 +252,11 @@ let Shops = [
   
   
   const createSitInShopElements = function(shopArray){
-    
+
+      const sitInMap = document.querySelector('#sitIn-map');
       for(shop of Shops){
         const card = document.createElement('div');
-        const mapUrl = document.createElement('a');
+        const mapFrame = document.createElement('div');
         const shopImg = document.createElement('img');
         const cardDetail = document.createElement('div');
         const cardText = document.createElement('span');
@@ -257,9 +265,10 @@ let Shops = [
         const cardLocation = document.createElement('span');
         const locationPin =document.createElement('img');
         const distance = document.createElement('div');
-  
+        
         card.classList.add("card-shops-small", "flex-shrink-0", "mx-2", "position-relative")
-        mapUrl.setAttribute("href", shop.mapUrl);
+        mapFrame.innerHTML = shop.mapFrame;
+        mapFrame.classList.add("d-none");
         shopImg.setAttribute("src", shop.imgAddress);
         shopImg.classList.add('d-block', 'card-img-shop')
         cardDetail.classList.add('card-text-shop',   'w-100', 'h-auto', 'pt-1', 'position-absolute', 'bottom-0');
@@ -280,10 +289,15 @@ let Shops = [
         cardLocation.appendChild(distance);
         cardDetail.appendChild(cardText);
         cardDetail.appendChild(cardLocation);
-        mapUrl.appendChild(shopImg);
-        card.appendChild(mapUrl);
+       
+        card.appendChild(mapFrame);
+        card.appendChild(shopImg);
         card.appendChild(cardDetail);
        
+        card.addEventListener('click', function(){
+          sitInMap.innerHTML = this.children[0].innerHTML;
+        })
+
         sitInShops.appendChild(card);
       }
     }    

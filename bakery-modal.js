@@ -11,3 +11,16 @@ const assignModal= function(){
 newBakeryOne.addEventListener('click', assignModal);
 newBakeryTwo.addEventListener('click', assignModal);
 newBakeryThree.addEventListener('click', assignModal);
+
+
+const testCard = document.querySelector('#test-card')
+const cardSmalls = document.querySelectorAll('.card-small')
+const assignModalTest= function(){
+  modalImgBakery.setAttribute("src",this.children[0].getAttribute('src'));
+  modalNameBakery.innerHTML = this.children[1].children[0].innerHTML;  
+}
+// testCard.addEventListener('click', assignModalTest);
+
+for(cardSmall of cardSmalls){
+  cardSmall.addEventListener('click', assignModalTest);
+}
