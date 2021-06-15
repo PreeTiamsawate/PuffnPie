@@ -1,26 +1,27 @@
-const newBakeryOne = document.querySelector('#newBakery-one')
-const newBakeryTwo = document.querySelector('#newBakery-two')
-const newBakeryThree = document.querySelector('#newBakery-three')
-const modalNameBakery = document.querySelector('#modal-name-bakery')
-const modalImgBakery = document.querySelector('#modal-img-bakery')
-const assignModal= function(){
-  modalImgBakery.setAttribute("src",this.children[0].getAttribute('src'));
-  modalNameBakery.innerHTML = this.children[1].innerHTML;  
 
-}
-newBakeryOne.addEventListener('click', assignModal);
-newBakeryTwo.addEventListener('click', assignModal);
-newBakeryThree.addEventListener('click', assignModal);
+const modalName = document.querySelector('.modal-name')
+const modalImg = document.querySelector('.modal-img')
+const modalIngredient = document.querySelector('.modal-ingredient')
+const modalDetail = document.querySelector('.modal-detail')
+const modalPreserve = document.querySelector('.modal-preservation')
 
-
-const testCard = document.querySelector('#test-card')
+const cardBigs = document.querySelectorAll('.card-big')
 const cardSmalls = document.querySelectorAll('.card-small')
-const assignModalTest= function(){
-  modalImgBakery.setAttribute("src",this.children[0].getAttribute('src'));
-  modalNameBakery.innerHTML = this.children[1].children[0].innerHTML;  
+const cardMobileNews = document.querySelectorAll('.card-mobile-new')
+const assignModal= function(){
+  modalImg.setAttribute("src",this.children[0].getAttribute('src'));
+  modalName.innerHTML = this.children[1].children[0].innerHTML;
+  modalIngredient.innerHTML = this.children[2].innerHTML;
+  modalDetail.innerHTML = this.children[3].innerHTML; 
+  modalPreserve.innerHTML = this.children[4].innerHTML; 
 }
-// testCard.addEventListener('click', assignModalTest);
 
+for(cardBig of cardBigs){
+  cardBig.addEventListener('click', assignModal);
+}
 for(cardSmall of cardSmalls){
-  cardSmall.addEventListener('click', assignModalTest);
+  cardSmall.addEventListener('click', assignModal);
+}
+for(cardMobileNew of cardMobileNews){
+  cardMobileNew.addEventListener('click', assignModal);
 }

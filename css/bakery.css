@@ -206,6 +206,7 @@
     min-width: 230px;
     width: 30%;
     height: 360px;
+    cursor: pointer;
     /* border: 1px solid red; */
   }
   .card-img-big{
@@ -308,6 +309,7 @@
     width: 195px;
     height: auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
     /* border: 1px solid red; */
   }
  
@@ -880,10 +882,10 @@ a, a:hover, a:focus, a:active {
   color: #EBEDEC;
   margin-top: 78px;
 }
-#contentOne-mobile{
+#contentOneBakery-mobile{
   width: 105%;
 }
-.newMenu-card{
+.card-mobile-new{
   width: 172px;
   height: 120px;
 }
@@ -894,10 +896,10 @@ a, a:hover, a:focus, a:active {
 
 }
 
-#contentOne-mobile::-webkit-scrollbar{
+#contentOneBakery-mobile::-webkit-scrollbar{
   display: none;
 }
-.newMenu-card-text{
+.newMenu-card-name{
   font-family:'Avenir LT Std', sans-serif;
   font-style: normal;
   font-weight: 350;
@@ -1033,7 +1035,7 @@ a, a:hover, a:focus, a:active {
   border-radius: 0px 0px 20px 20px;
 
 }
-.modal-img-name{
+.modal-name{
   font-family: 'Avenir LT Std', sans-serif;
   font-style: normal;
   font-weight: 350;
@@ -1090,7 +1092,7 @@ a, a:hover, a:focus, a:active {
   width: 25px;
   height: 25px;
 }
-.preserve-detail{
+.modal-preservation{
   font-family: 'Avenir LT Std', sans-serif;
   font-style: normal;
   font-weight: 750;
