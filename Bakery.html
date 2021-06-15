@@ -35,10 +35,10 @@
                     <li class="nav-item  ">
                         <a class="nav-link nav-menu-link" aria-current="page" href="./Meal.html">Meal</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item " data-bs-toggle="modal" data-bs-target="#notAvailModal">
                         <a class="nav-link  nav-menu-link " aria-current="page" href="#">Box</a>
                     </li>
-                    <li class="nav-item  ">
+                    <li class="nav-item  " data-bs-toggle="modal" data-bs-target="#notAvailModal">
                         <a class="nav-link nav-menu-link " aria-current="page" href="#">Event</a>
                     </li>
                     <li class="nav-item  ">
@@ -65,19 +65,19 @@
                 </picture>
                 <div class='textIcon w-100'>Meal</div>
             </a>
-            <a class="col-2  px-0  " href="./Home.html" onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
+            <a class="col-2  px-0  " href="./Home.html" onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'"  >
                 <picture class=" px-0 mx-auto d-block h-auto">
                     <img id= 'homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt="" srcset="">
                 </picture>
                 <div class='textIcon w-100'>Home</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'">
+            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'"  data-bs-toggle="modal" data-bs-target="#notAvailModal">
                 <picture class=" px-0 mx-auto d-block h-auto">
                     <img id= 'boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt="" srcset="">
                 </picture>
                 <div class='textIcon w-100'>Box</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'">
+            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'" data-bs-toggle="modal" data-bs-target="#notAvailModal">
                 <picture class=" px-0 mx-auto d-block h-auto">
                     <img id= 'eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt="" srcset="">
                 </picture>
@@ -851,9 +851,23 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
-    <footer class="py-md-3 w-100 h-auto pb-5">
+    <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Service Not Available</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This service will be available soon. Please come back later.
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer id="contentFooter" class="py-md-3 w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
             <div class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto" >
                 <div>
