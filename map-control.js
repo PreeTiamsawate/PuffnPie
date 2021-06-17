@@ -146,9 +146,11 @@ let Shops = [
     // mapLink.textContent = '';
   
     if (!navigator.geolocation) {
-        alert('Geolocation is not supported by your browser');
-        createToGoShopElements(Shops);
-        createSitInShopElements(Shops);
+      alert('Geolocation is not supported by your browser');
+      createShopElement(toGoShops, Shops);
+      createShopElement(sitInShops, Shops);
+        // createToGoShopElements(Shops);
+        // createSitInShopElements(Shops);
     } else {
         // status.textContent = 'Locating…';
         
@@ -174,18 +176,22 @@ let Shops = [
         let sortedShops = Shops.sort(function (a, b) {
             return  a.distance - b.distance;
         });
-        console.log(sortedShops);
-        createToGoShopElements(sortedShops);
-        createSitInShopElements(sortedShops);
+      console.log(sortedShops);
+      createShopElement(toGoShops, Shops);
+      createShopElement(sitInShops, Shops);
+        // createToGoShopElements(sortedShops);
+        // createSitInShopElements(sortedShops);
         
     }
   
   
     function error() {
         alert('Unable to retrieve your location');
-        console.log(Shops);
-        createToGoShopElements(Shops);
-        createSitInShopElements(Shops);
+      console.log(Shops);
+      createShopElement(toGoShops, Shops);
+      createShopElement(sitInShops, Shops);
+        // createToGoShopElements(Shops);
+        // createSitInShopElements(Shops);
     }
   }
   
@@ -196,11 +202,11 @@ let Shops = [
   const toGoShops = document.querySelector('#toGoShops');
   const sitInShops = document.querySelector('#sitInShops');
   
-  
-  
-  const createToGoShopElements = function(shopArray){
-    const toGoMap = document.querySelector('#toGo-map')
-    for(shop of shopArray){
+
+const toGoMap = document.querySelector('#toGo-map');
+const sitInMap = document.querySelector('#sitIn-map');
+const createShopElement = function (shopList, shopArray) {
+  for(shop of shopArray){
       const card = document.createElement('div');
       const mapFrame = document.createElement('div');
       const shopImg = document.createElement('img');
@@ -239,65 +245,123 @@ let Shops = [
       card.appendChild(mapFrame);
       card.appendChild(shopImg);
       card.appendChild(cardDetail);
-
-      card.addEventListener('click', function(){
-        toGoMap.innerHTML = this.children[0].innerHTML;
-      })
-
-      toGoShops.appendChild(card);
     
+    if (shopList == toGoShops) {
+         card.addEventListener('click', function(){
+        toGoMap.innerHTML = this.children[0].innerHTML;
+        })
+    } else if (shopList == sitInShops) {
+         card.addEventListener('click', function(){
+          sitInMap.innerHTML = this.children[0].innerHTML;
+        })
+    }
+       
+      shopList.appendChild(card);
     }
   }
   
-  
-  
-  const createSitInShopElements = function(shopArray){
 
-      const sitInMap = document.querySelector('#sitIn-map');
-      for(shop of Shops){
-        const card = document.createElement('div');
-        const mapFrame = document.createElement('div');
-        const shopImg = document.createElement('img');
-        const cardDetail = document.createElement('div');
-        const cardText = document.createElement('span');
-        const PnP = document.createElement('div');
-        const branchName = document.createElement('div');
-        const cardLocation = document.createElement('span');
-        const locationPin =document.createElement('img');
-        const distance = document.createElement('div');
+
+  // const createToGoShopElements = function(shopArray){
+  //   const toGoMap = document.querySelector('#toGo-map')
+  //   for(shop of shopArray){
+  //     const card = document.createElement('div');
+  //     const mapFrame = document.createElement('div');
+  //     const shopImg = document.createElement('img');
+  //     const cardDetail = document.createElement('div');
+  //     const cardText = document.createElement('span');
+  //     const PnP = document.createElement('div');
+  //     const branchName = document.createElement('div');
+  //     const cardLocation = document.createElement('span');
+  //     const locationPin =document.createElement('img');
+  //     const distance = document.createElement('div');
+  
+  //     card.classList.add("card-shops-small", "flex-shrink-0", "mx-2", "position-relative")
+  //     mapFrame.innerHTML = shop.mapFrame;
+  //     mapFrame.classList.add("d-none");
+  //     shopImg.setAttribute("src", shop.imgAddress);
+  //     shopImg.classList.add('d-block', 'card-img-shop')
+  //     cardDetail.classList.add('card-text-shop',   'w-100', 'h-auto', 'pt-1', 'position-absolute', 'bottom-0');
+  //     cardText.classList.add('float-start', 'mt-1');
+  //     PnP.classList.add('shop');
+  //     PnP.innerText ="Puff & Pie";
+  //     branchName.classList.add('branch', 'mt-1');
+  //     branchName.innerText = shop.branchName;
+  //     locationPin.setAttribute("src", "./images/placeholder.png");
+  //     locationPin.classList.add('location-pin', 'me-2')
+  //     cardLocation.classList.add('float-end', 'mb-1')
+  //     distance.classList.add('distance', 'mt-1');
+  //     distance.innerText = shop.distanceInKm
+    
+  //     cardText.appendChild(PnP);
+  //     cardText.appendChild(branchName);
+  //     cardLocation.appendChild(locationPin);
+  //     cardLocation.appendChild(distance);
+  //     cardDetail.appendChild(cardText);
+  //     cardDetail.appendChild(cardLocation);
+
+  //     card.appendChild(mapFrame);
+  //     card.appendChild(shopImg);
+  //     card.appendChild(cardDetail);
+
+  //     card.addEventListener('click', function(){
+  //       toGoMap.innerHTML = this.children[0].innerHTML;
+  //     })
+
+  //     toGoShops.appendChild(card);
+    
+  //   }
+  // }
+  
+  
+  
+  // const createSitInShopElements = function(shopArray){
+
+  //     const sitInMap = document.querySelector('#sitIn-map');
+  //     for(shop of Shops){
+  //       const card = document.createElement('div');
+  //       const mapFrame = document.createElement('div');
+  //       const shopImg = document.createElement('img');
+  //       const cardDetail = document.createElement('div');
+  //       const cardText = document.createElement('span');
+  //       const PnP = document.createElement('div');
+  //       const branchName = document.createElement('div');
+  //       const cardLocation = document.createElement('span');
+  //       const locationPin =document.createElement('img');
+  //       const distance = document.createElement('div');
         
-        card.classList.add("card-shops-small", "flex-shrink-0", "mx-2", "position-relative")
-        mapFrame.innerHTML = shop.mapFrame;
-        mapFrame.classList.add("d-none");
-        shopImg.setAttribute("src", shop.imgAddress);
-        shopImg.classList.add('d-block', 'card-img-shop')
-        cardDetail.classList.add('card-text-shop',   'w-100', 'h-auto', 'pt-1', 'position-absolute', 'bottom-0');
-        cardText.classList.add('float-start', 'mt-1');
-        PnP.classList.add('shop');
-        PnP.innerText ="Puff & Pie";
-        branchName.classList.add('branch', 'mt-1');
-        branchName.innerText = shop.branchName;
-        locationPin.setAttribute("src", "./images/placeholder.png");
-        locationPin.classList.add('location-pin', 'me-2')
-        cardLocation.classList.add('float-end', 'mb-1');
-        distance.classList.add('distance', 'mt-1');
-        distance.innerText = shop.distanceInKm
+  //       card.classList.add("card-shops-small", "flex-shrink-0", "mx-2", "position-relative")
+  //       mapFrame.innerHTML = shop.mapFrame;
+  //       mapFrame.classList.add("d-none");
+  //       shopImg.setAttribute("src", shop.imgAddress);
+  //       shopImg.classList.add('d-block', 'card-img-shop')
+  //       cardDetail.classList.add('card-text-shop',   'w-100', 'h-auto', 'pt-1', 'position-absolute', 'bottom-0');
+  //       cardText.classList.add('float-start', 'mt-1');
+  //       PnP.classList.add('shop');
+  //       PnP.innerText ="Puff & Pie";
+  //       branchName.classList.add('branch', 'mt-1');
+  //       branchName.innerText = shop.branchName;
+  //       locationPin.setAttribute("src", "./images/placeholder.png");
+  //       locationPin.classList.add('location-pin', 'me-2')
+  //       cardLocation.classList.add('float-end', 'mb-1');
+  //       distance.classList.add('distance', 'mt-1');
+  //       distance.innerText = shop.distanceInKm
   
-        cardText.appendChild(PnP);
-        cardText.appendChild(branchName);
-        cardLocation.appendChild(locationPin);
-        cardLocation.appendChild(distance);
-        cardDetail.appendChild(cardText);
-        cardDetail.appendChild(cardLocation);
+  //       cardText.appendChild(PnP);
+  //       cardText.appendChild(branchName);
+  //       cardLocation.appendChild(locationPin);
+  //       cardLocation.appendChild(distance);
+  //       cardDetail.appendChild(cardText);
+  //       cardDetail.appendChild(cardLocation);
        
-        card.appendChild(mapFrame);
-        card.appendChild(shopImg);
-        card.appendChild(cardDetail);
+  //       card.appendChild(mapFrame);
+  //       card.appendChild(shopImg);
+  //       card.appendChild(cardDetail);
        
-        card.addEventListener('click', function(){
-          sitInMap.innerHTML = this.children[0].innerHTML;
-        })
+  //       card.addEventListener('click', function(){
+  //         sitInMap.innerHTML = this.children[0].innerHTML;
+  //       })
 
-        sitInShops.appendChild(card);
-      }
-    }    
+  //       sitInShops.appendChild(card);
+  //     }
+  //   }    
