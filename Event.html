@@ -50,49 +50,48 @@
     <!-- Navbar for Mobile==================================================================== -->
     <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
         <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-            <a class="col-2  px-0  " href="./Bakery.html"
-                onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
-                <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id='bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt=""
-                        srcset="">
-                </picture>
+            <a class="col-2  px-0 mobile-link " href="./Bakery.html"
+                onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hovers.png'">
+
+                <img id='bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images/Icons/Bakery-Active.png">
+
                 <div class='textIcon w-100'>Bakery</div>
             </a>
-            <a class="col-2  px-0  " href="./Meal.html"
+            <a class="col-2  px-0 mobile-link  " href="./Meal.html"
                 onmousedown="document.getElementById('mealIcon').src='./images/Icons/Meal-Hover.png'">
-                <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id='mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png" alt=""
-                        srcset="">
-                </picture>
+
+                <img id='mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images/Icons/Meal-Active.png">
+
                 <div class='textIcon w-100'>Meal</div>
             </a>
-            <a class="col-2  px-0  " href="./Home.html"
+            <a class="col-2  px-0 mobile-link " href="./Home.html"
                 onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
-                <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id='homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt=""
-                        srcset="">
-                </picture>
+
+                <img id='homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images/Icons/Home-Active.png">
+
                 <div class='textIcon w-100'>Home</div>
             </a>
-            <a class="col-2  px-0  " href=''
-                onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'"
-                data-bs-toggle="modal" data-bs-target="#notAvailModal">
-                <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id='boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt=""
-                        srcset="">
-                </picture>
+            <a class="col-2  px-0  mobile-link " href='./Box.html'
+                onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'">
+
+                <img id='boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images/Icons/Box-Active.png">
+
                 <div class='textIcon w-100'>Box</div>
             </a>
-            <a class="col-2  px-0  " href='./Event.html'>
-                <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id='eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Active.png" alt=""
-                        srcset="">
-                </picture>
-                <div class='textIcon-active w-100'>Event</div>
+            <a class="col-2  px-0  mobile-link" href='./Event.html'
+                onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'">
+
+                <img id='eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png">
+                <img class="imgIcon d-none mx-auto" src="./images/Icons/Event-Active.png">
+
+                <div class='textIcon w-100'>Event</div>
             </a>
         </div>
     </nav>
-
     <section id="sectionOneEvent">
         <div class="container">
             <!-- Section one Desktop==================================================================== -->
