@@ -826,6 +826,15 @@ b {
   text-align: center;
   color: #ebedec;
 }
+.textIcon-hover {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ebedec;
+}
 a,
 a:hover,
 a:focus,
