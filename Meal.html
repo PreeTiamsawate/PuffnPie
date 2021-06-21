@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,97 +11,103 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-    
+
     <link href="./css/meal.css" rel="stylesheet" />
     <title>Meal - Puff n' Pie</title>
     <link rel="icon" href="./favicon.ico">
 </head>
 
 <body>
-     <!-- Navbar for Desktop==================================================================== -->
+    <!-- Navbar for Desktop==================================================================== -->
     <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
         <div class="container mt-lg-2">
             <a class="navbar-brand ms-md-3" href="./Home.html">
                 <div class="logo-home"></div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link" aria-current="page" href="./Bakery.html">Bakery</a>
+                        <a class="nav-link nav-menu-link  " href="./Bakery.html">Bakery</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link  nav-menu-link-acitve" aria-current="page" href="#">Meal</a>
+                        <a class="nav-link nav-menu-link" href="./Meal.html">Meal</a>
                     </li>
-                    <li class="nav-item " data-bs-toggle="modal" data-bs-target="#notAvailModal">
-                        <a class="nav-link  nav-menu-link " aria-current="page" href="#">Box</a>
-                    </li>
-                    <li class="nav-item  " data-bs-toggle="modal" data-bs-target="#notAvailModal">
-                        <a class="nav-link nav-menu-link " aria-current="page" href="#">Event</a>
+                    <li class="nav-item ">
+                        <a class="nav-link  nav-menu-link " href="./Box.html">Box</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link " aria-current="page" href="#contentFooter">Contact</a>
+                        <a class="nav-link nav-menu-link " href="./Event.html">Event</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link nav-menu-link " href="#contentFooter">Contact</a>
                     </li>
                 </ul>
                 <div id="catering-logo"></div>
-           
             </div>
         </div>
     </nav>
-      <!-- Navbar for Mobile==================================================================== -->
+
+    <!-- Navbar for Mobile==================================================================== -->
     <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
         <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-            <a class="col-2  px-0  " href="./Bakery.html" onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
+            <a class="col-2  px-0  " href="./Bakery.html"
+                onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt="" srcset="">
+                    <img id='bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Bakery</div>
             </a>
-            <a class="col-2  px-0  " href="./Meal.html" >
+            <a class="col-2  px-0  " href="./Meal.html">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Active.png" alt="" srcset="">
+                    <img id='mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Active.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon-active w-100'>Meal</div>
             </a>
-            <a class="col-2  px-0  " href="./Home.html" onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
+            <a class="col-2  px-0  " href="./Home.html"
+                onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt="" srcset="">
+                    <img id='homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Home</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'" data-bs-toggle="modal" data-bs-target="#notAvailModal">
+            <a class="col-2  px-0  " href=''
+                onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'"
+                data-bs-toggle="modal" data-bs-target="#notAvailModal">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt="" srcset="">
+                    <img id='boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Box</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'" data-bs-toggle="modal" data-bs-target="#notAvailModal">
+            <a class="col-2  px-0  " href=''
+                onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'"
+                data-bs-toggle="modal" data-bs-target="#notAvailModal">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt="" srcset="">
+                    <img id='eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Event</div>
             </a>
-        </div> 
+        </div>
     </nav>
 
-    <section id="sectionOneMeal"  >
+    <section id="sectionOneMeal">
         <div class="container">
-              <!-- Section one Desktop==================================================================== -->
-            <h1 id="Meal" class="mx-auto  mb-lg-2  mb-1 d-md-block d-none" >
+            <!-- Section one Desktop==================================================================== -->
+            <h1 id="Meal" class="mx-auto  mb-lg-2  mb-1 d-md-block d-none">
                 Meal
             </h1>
-             <!-- Mobile Header -->
-             <h1 id='newMenu' class="mx-auto d-md-none d-block ">
+            <!-- Mobile Header -->
+            <h1 id='newMenu' class="mx-auto d-md-none d-block ">
                 New <br>
                 Cuisines
             </h1>
             <div class="bar-dark mx-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
             <div id="contentOneMeal" class=" mx-auto py-md-2 h-auto mx-md-5 d-md-block d-none">
-                <div class="mx-md-5" >
+                <div class="mx-md-5">
                     <div class="newArrivals mt-0">New Arrivals</div>
                     <div class="bar-dark-sm"></div>
                     <div class="d-flex justify-content-between mt-3 ">
@@ -113,8 +120,8 @@
                             </div>
                             <div class="ingredient d-none">
                                 PumpkinsTest,<br>
-                                MilkTest, <br> 
-                                ButterTest, <br> 
+                                MilkTest, <br>
+                                ButterTest, <br>
                                 WhipcreamTest</div>
                             <div class="productDetail d-none">
                                 Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -134,8 +141,8 @@
                             </div>
                             <div class="ingredient d-none">
                                 PumpkinsTest,<br>
-                                MilkTest, <br> 
-                                ButterTest, <br> 
+                                MilkTest, <br>
+                                ButterTest, <br>
                                 WhipcreamTest</div>
                             <div class="productDetail d-none">
                                 PRumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -155,8 +162,8 @@
                             </div>
                             <div class="ingredient d-none">
                                 PumpkinsTest,<br>
-                                MilkTest, <br> 
-                                ButterTest, <br> 
+                                MilkTest, <br>
+                                ButterTest, <br>
                                 WhipcreamTest</div>
                             <div class="productDetail d-none">
                                 Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -166,24 +173,25 @@
                                 2 Days Storage <br>
                                 Cold and Dry Places
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Section One for Mobile==================================================================== -->
             <div id="contentOneMeal-mobile" class="d-block d-md-none d-flex flex-row overflow-auto mt-5  h-auto">
-                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative"   data-bs-toggle="modal" data-bs-target="#modal-meal" >
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
+                    data-bs-target="#modal-meal">
                     <img src="./images/v220_95.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
-                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2" >
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
                             Grilled Bacon <br>
                             Penne Pasta
                         </h4>
                     </div>
                     <div class="ingredient d-none">
                         PumpkinsTest,<br>
-                        MilkTest, <br> 
-                        ButterTest, <br> 
+                        MilkTest, <br>
+                        ButterTest, <br>
                         WhipcreamTest</div>
                     <div class="productDetail d-none">
                         Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -194,18 +202,19 @@
                         Cold and Dry Places
                     </div>
                 </div>
-                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative "   data-bs-toggle="modal" data-bs-target="#modal-meal" >
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative " data-bs-toggle="modal"
+                    data-bs-target="#modal-meal">
                     <img src="./images/v220_94.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
-                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2" >
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
                             New Meal <br>
                             Test 2
                         </h4>
                     </div>
                     <div class="ingredient d-none">
                         PumpkinsTest,<br>
-                        MilkTest, <br> 
-                        ButterTest, <br> 
+                        MilkTest, <br>
+                        ButterTest, <br>
                         WhipcreamTest</div>
                     <div class="productDetail d-none">
                         Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -216,18 +225,19 @@
                         Cold and Dry Places
                     </div>
                 </div>
-                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative"  data-bs-toggle="modal" data-bs-target="#modal-meal">
+                <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
+                    data-bs-target="#modal-meal">
                     <img src="./images/v220_55.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
-                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2" >
+                        <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
                             New Meal <br>
                             Test 3
                         </h4>
                     </div>
                     <div class="ingredient d-none">
                         PumpkinsTest,<br>
-                        MilkTest, <br> 
-                        ButterTest, <br> 
+                        MilkTest, <br>
+                        ButterTest, <br>
                         WhipcreamTest</div>
                     <div class="productDetail d-none">
                         Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
@@ -238,33 +248,33 @@
                         Cold and Dry Places
                     </div>
                 </div>
-                </div>
             </div>
         </div>
-        
-    </div>
+        </div>
+
+        </div>
     </section>
 
-     <!-- White Sections=================================================================== -->
+    <!-- White Sections=================================================================== -->
 
     <section class="sectionMeal py-lg-5 py-md-3 py-2 w-100 h-auto">
         <div class="container mx-auto row">
             <div class="col-md-6 col-0 d-md-block d-none ">
                 <div class="position-relative w-50 h-auto mt-5">
-                    <img src="./images/v220_34.png "class=" pic-sm " alt="">
+                    <img src="./images/v220_34.png " class=" pic-sm " alt="">
                     <img src="./images/v220_35.png" class="position-absolute top-50 start-50 pic-lg" alt="">
                 </div>
-                
+
             </div>
             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-                <div class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">"Let's start with 
+                <div class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">"Let's start with
                     <br>Appetizers"
                 </div>
                 <div class="bar-dark d-md-block d-none"></div>
                 <div class="detailEng my-md-4 my-2  d-lg-block d-none">
                     With our pride of thai cruisine, we would like to introduce you
                     <br>through the journey of well-crafted cruisine created by our
-                    <br>passionate internationa cruisine chef. 
+                    <br>passionate internationa cruisine chef.
                 </div>
                 <div class="deatailThai  d-lg-block d-none">
                     ครัวการบินไทยมีความยินดีที่จะพาท่านลิ้มรสอาหารต้นตำหรับไทยและนานาชาติ
@@ -296,33 +306,36 @@
                             Cold and Dry Places
                         </div>
                     </div> -->
-                    
+
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab Me!</button>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none">Grab
+                    Me!</button>
             </div>
-                
+
         </div>
-    </section>   
+    </section>
 
     <section class="sectionMeal py-md-5  py-2 w-100 h-auto">
         <div class="container mx-auto row">
-            
+
             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-                <div class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">"Main Course 
+                <div class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">"Main Course
                     <br>with THAI"
                 </div>
                 <div class="bar-dark ms-md-auto d-md-block d-none "></div>
-                <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">Fulfilling your day with authentic Thai cruisines is a great choice!
+                <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">Fulfilling your day with authentic Thai
+                    cruisines is a great choice!
                     <br>We prepare various menus to make you feel like home.
-                    
+
                 </div>
                 <div class="deatailThai text-end  d-lg-block d-none ">
-                   เติมเต็มวันของท่านด้วยอาหารไทยสูตรต้นตำหรับแบบดั้งเดิม
+                    เติมเต็มวันของท่านด้วยอาหารไทยสูตรต้นตำหรับแบบดั้งเดิม
                     <br>เราได้จัดเตรียมเมนูอาหารไทยเพื่อให้ท่านได้ลิ้มรสชาติที่ท่านคิดถึงและประทับใจ
                 </div>
                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Main Course </h2>
                 <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
-                <div id="mainCourseBox" class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-4  float-md-end ">
+                <div id="mainCourseBox"
+                    class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-4  float-md-end ">
                     <!-- Card Elememts Created by meal-data.js
                     <div class="card-small flex-shrink-0 mx-2"  data-bs-toggle="modal" data-bs-target="#modal-meal">
                         <img src="./images/v220_95.png" alt="image not available" class="d-block card-img-small">
@@ -345,31 +358,34 @@
                             Cold and Dry Places
                         </div>
                     </div> -->
-                    
+
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab Me!</button>
+                <button type="button"
+                    class="btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab
+                    Me!</button>
             </div>
             <div class="col-md-6 col-0 d-md-block d-none ">
                 <div class="position-relative w-50 h-auto mt-3 ms-5 ps-5">
-                    <img src="./images/v224_15.png" class="position-absolute top-50 start-50 pic-lg" alt="" style="object-fit: cover;">
-                    <img src="./images/v220_55.png "class=" pic-sm " alt="" >
-                    
+                    <img src="./images/v224_15.png" class="position-absolute top-50 start-50 pic-lg" alt=""
+                        style="object-fit: cover;">
+                    <img src="./images/v220_55.png " class=" pic-sm " alt="">
+
                 </div>
-                
+
             </div>
-                
+
         </div>
     </section>
-      <!-- Dining Experience Sections=================================================================== -->
+    <!-- Dining Experience Sections=================================================================== -->
     <section class="narrow-section d-flex flex-column justify-content-around align-items-center">
-        
+
         <div class="header-narrow h-auto text-start  px-2  align-self-start">Royal Orchid <br>
             Dining Experience
         </div>
         <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
     </section>
 
-      <!-- Black Sections=================================================================== -->
+    <!-- Black Sections=================================================================== -->
     <section class="section-dark w-100 py-lg-5 py-md-3 py-2  h-auto d-flex flex-column ">
         <div class="quoteWhite text-center my-lg-4 my-2  d-md-block d-none">
             "Feel Exotic <br>in Westerns"
@@ -377,7 +393,7 @@
         <div class="bar-light-long mx-auto my-lg-4 my-2  d-md-block d-none"></div>
         <div class="detailEng-white text-center my-md-4 my-2  d-lg-block d-none">
             If you want to escape ordinary dinning, we get you covered. <br>
-            With our selected western menus to cherish your crave. 
+            With our selected western menus to cherish your crave.
         </div>
         <div class="deatailThai-white text-center my-md-4 my-2   d-lg-block d-none">
             หากท่านต้องการออกจากความจำเจ เราได้จัดเตรียมเมนูอาหารตะวันตกไว้ให้ท่าน <br>
@@ -386,7 +402,7 @@
         <div class="container mx-auto ps-3 ps-lg-5 pt-2">
             <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">Westerns</h2>
             <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
-            
+
             <div id="westernBox" class="d-flex flex-row overflow-auto scroll-box my-lg-4 my-2 ms-md-5 ms-auto ">
                 <!-- Card Elememts Created by meal-data.js
                 <div class="card-small flex-shrink-0 mx-2"  data-bs-toggle="modal" data-bs-target="#modal-meal">
@@ -410,24 +426,26 @@
                         Cold and Dry Places
                     </div>
                 </div> -->
-              
+
             </div>
 
         </div>
 
-        
-        <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn mx-auto my-md-4 d-md-block d-none my-2">Grab Me!</button>
+
+        <button type="button"
+            class="btn btn-primary btn-lg rounded-pill grabMe-btn mx-auto my-md-4 d-md-block d-none my-2">Grab
+            Me!</button>
         <div class="container mx-auto pt-3 row">
             <div class="col-md-6 col-0  d-md-block d-none ">
                 <div class="position-relative w-50 h-auto mt-5">
-                    <img src="./images/v220_95.png  "class=" pic-sm" alt="" style="object-fit: cover;">
-                <img src="./images/v220_94.png" class="position-absolute top-50 start-50 pic-lg"  alt="">
+                    <img src="./images/v220_95.png  " class=" pic-sm" alt="" style="object-fit: cover;">
+                    <img src="./images/v220_94.png" class="position-absolute top-50 start-50 pic-lg" alt="">
                 </div>
-                
+
             </div>
             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                 <div class="quoteWhite mb-3  d-md-block d-none">
-                    "Stay Healty 
+                    "Stay Healty
                     <br>and Love Salads"
                 </div>
                 <div class="bar-light-long d-md-block d-none"></div>
@@ -465,11 +483,13 @@
                             Cold and Dry Places
                         </div>
                     </div> -->
-                    
-                    
+
+
                 </div>
-                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3">Grab Me!</button>
-            </div> 
+                <button type="button"
+                    class="btn btn-primary btn-lg rounded-pill grabMe-btn d-block  ms-md-5 mx-auto my-md-4 my-3">Grab
+                    Me!</button>
+            </div>
         </div>
         <div class="bar-light-long mx-auto d-lg-block d-none my-md-5 my-2"></div>
     </section>
@@ -478,49 +498,51 @@
             in places
         </div>
         <a href="./Map.html" class="btn btn-primary btn-lg rounded-pill visitShops-btn">Visit Shops</a>
-       
+
     </section>
     <!-- Modal Section------------------------------------------------ -->
-   
+
     <div class="modal fade" id="modal-meal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-img-contaniner position-relative mx-md-5 mt-md-2">
-                <img src="" alt="" class="modal-img ">
-                <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
-                    <h2 class="modal-name mb-0" >
-                       <!-- Test Noodle -->
-                    </h2>
-                    
-                    <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal   float-end">Grab Me!</button>
+            <div class="modal-content">
+                <div class="modal-img-contaniner position-relative mx-md-5 mt-md-2">
+                    <img src="" alt="" class="modal-img ">
+                    <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
+                        <h2 class="modal-name mb-0">
+                            <!-- Test Noodle -->
+                        </h2>
+
+                        <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal   float-end">Grab
+                            Me!</button>
+                    </div>
+                    <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"  data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="row w-100 h-auto modal-text mx-auto">
-                <div class="col-5 modal-ingredient ps-md-5 ps-2 py-2">
-                    <!-- Pumpkins,<br>
+                <div class="row w-100 h-auto modal-text mx-auto">
+                    <div class="col-5 modal-ingredient ps-md-5 ps-2 py-2">
+                        <!-- Pumpkins,<br>
                     Milk, <br> 
                     Butter, <br> 
                     Whipcream -->
-                </div>
-                <div class="col-7 modal-detail py-2">
-                    <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
+                    </div>
+                    <div class="col-7 modal-detail py-2">
+                        <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
                     Now, let’s grab this and enjoy more good to both your health and joy. -->
+                    </div>
+                </div>
+                <div class="time-preserve mx-auto py-2 text-center">
+                    <img src="./images/image-mobile/Clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                    <p class="preserve-detail modal-preservation d-inline-block pt-0 my-0 ps-2">
+                        <!-- 2 Days Storage <br>
+                    Cold and Dry Places -->
+                    </p>
+
                 </div>
             </div>
-            <div class="time-preserve mx-auto py-2 text-center" >
-                <img src="./images/image-mobile/Clock.png" alt="" class="clock-img mb-3 d-inline-block">
-                <p class="preserve-detail modal-preservation d-inline-block pt-0 my-0 ps-2">
-                    <!-- 2 Days Storage <br>
-                    Cold and Dry Places -->
-                </p>
-    
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="notAvailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -532,10 +554,11 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
     <footer id="contentFooter" class="py-lg-3 w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
-            <div class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto" >
+            <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto">
                 <div>
                     <div class="Contact">Contact</div>
                     <div class="bar-light my-3"></div>
@@ -547,7 +570,7 @@
                     <div class="v46_29"></div>
 
                 </div>
-               
+
 
             </div>
             <div class="col-lg-2 col-6 h-auto  contacts">
@@ -630,16 +653,19 @@
         </div>
 
     </footer>
-    
+
     <!-- Javascript for Bootstrap5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <!-- Navbar Control Javascript -->
+    <script src="./navbar-control.js"></script>
     <!-- Import Meal Data  -->
     <script src="./meal-data.js"></script>
     <!-- Modal Control Javascript     -->
     <script src="./meal-modal.js"></script>
     <!-- Scroll Control Javascript -->
     <script src="./scroll-control.js"></script>
-</body>    
+</body>
+
 </html>

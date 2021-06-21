@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,86 +11,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-   
+
     <link href="./css/map.css" rel="stylesheet" />
     <title>Locations - Puff n' Pie</title>
     <link rel="icon" href="./favicon.ico">
 </head>
 
 <body onload="showShopsByDistance()">
-    <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block">
+    <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
         <div class="container mt-lg-2">
-            <a class="navbar-brand ms-lg-3" href="./Home.html">
+            <a class="navbar-brand ms-md-3" href="./Home.html">
                 <div class="logo-home"></div>
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2 nav-menu d-md-flex justify-content-between">
+                <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link  " aria-current="page" href="./Bakery.html">Bakery</a>
+                        <a class="nav-link nav-menu-link  " href="./Bakery.html">Bakery</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link" aria-current="page" href="./Meal.html">Meal</a>
+                        <a class="nav-link nav-menu-link" href="./Meal.html">Meal</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link  nav-menu-link " aria-current="page" href="#">Box</a>
+                        <a class="nav-link  nav-menu-link " href="./Box.html">Box</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link " aria-current="page" href="#">Event</a>
+                        <a class="nav-link nav-menu-link " href="./Event.html">Event</a>
                     </li>
                     <li class="nav-item  ">
-                        <a class="nav-link nav-menu-link " aria-current="page" href="#contentFooter">Contact</a>
+                        <a class="nav-link nav-menu-link " href="#contentFooter">Contact</a>
                     </li>
                 </ul>
                 <div id="catering-logo"></div>
-           
             </div>
         </div>
     </nav>
 
+
     <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
         <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-            <a class="col-2  px-0  " href="./Bakery.html" onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
+            <a class="col-2  px-0  " href="./Bakery.html"
+                onmousedown="document.getElementById('bakeryIcon').src='./images/Icons/Bakery-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt="" srcset="">
+                    <img id='bakeryIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Bakery-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Bakery</div>
             </a>
-            <a class="col-2  px-0  " href="./Meal.html" >
+            <a class="col-2  px-0  " href="./Meal.html">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png" alt="" srcset="">
+                    <img id='mealIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Meal-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Meal</div>
             </a>
-            <a class="col-2  px-0  " href="./Home.html" onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
+            <a class="col-2  px-0  " href="./Home.html"
+                onmousedown="document.getElementById('homeIcon').src='./images/Icons/Home-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt="" srcset="">
+                    <img id='homeIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Home-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Home</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'">
+            <a class="col-2  px-0  " href=''
+                onmousedown="document.getElementById('boxIcon').src='./images/Icons/Box-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt="" srcset="">
+                    <img id='boxIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Box-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Box</div>
             </a>
-            <a class="col-2  px-0  " href='' onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'">
+            <a class="col-2  px-0  " href=''
+                onmousedown="document.getElementById('eventIcon').src='./images/Icons/Event-Hover.png'">
                 <picture class=" px-0 mx-auto d-block h-auto">
-                    <img id= 'eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt="" srcset="">
+                    <img id='eventIcon' class="imgIcon d-block mx-auto" src="./images/Icons/Event-Default.png" alt=""
+                        srcset="">
                 </picture>
                 <div class='textIcon w-100'>Event</div>
             </a>
-        </div> 
+        </div>
     </nav>
     <section class="v41_32 d-flex flex-column justify-content-center align-items-center">
         <h1 id="visitOurShops">
             Visit Our Shop
         </h1>
-       
+
     </section>
 
     <section id="shops" class=" h-auto w-100 py-lg-4 py-2 ps-md-5 ps-2">
@@ -121,14 +126,14 @@
                        
                     </div>  
                 </div> -->
-               
+
             </div>
             <div id="toGo-map" class="w-100">
-                
-            </div>    
+
+            </div>
         </div>
-        <div  class="place-box mx-lg-5 px-lg-5 px-0 mx-2 my-4">
-            <h2  class="place-box-header">
+        <div class="place-box mx-lg-5 px-lg-5 px-0 mx-2 my-4">
+            <h2 class="place-box-header">
                 Sit-In Shops
             </h2>
             <div class="bar-light-small mt-2"></div>
@@ -155,19 +160,20 @@
                        
                     </div>  
                 </div> -->
-                
+
             </div>
             <div id="sitIn-map" class="w-100">
-                
-            </div>    
+
+            </div>
         </div>
     </section>
-    
+
     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247882.7721857162!2d100.531706!3d13.888882000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623655028026!5m2!1sen!2sth" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe> -->
-    
+
     <footer class="py-lg-3 w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
-            <div class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto" >
+            <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-center justify-content-lg-around justify-content-center h-auto">
                 <div>
                     <div class="Contact">Contact</div>
                     <div class="bar-light my-3"></div>
@@ -179,7 +185,7 @@
                     <div class="v46_29"></div>
 
                 </div>
-               
+
 
             </div>
             <div class="col-lg-2 col-6 h-auto  contacts">
@@ -262,12 +268,13 @@
         </div>
 
     </footer>
-     <!-- Javascript for Bootstrap5 -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-     crossorigin="anonymous"></script>
+    <!-- Javascript for Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
-     <!-- Map Control Javascript     -->
+    <!-- Map Control Javascript     -->
     <script src="./map-control.js"></script>
 </body>
+
 </html>
