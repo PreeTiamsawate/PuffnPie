@@ -230,51 +230,6 @@ border: 1px solid red;
   color: #000000;
 }
 
-/* Mobile Screen Display=============================================================== */
-
-#mobileNavbar {
-  width: 100%;
-  height: 65px;
-  background: rgba(0, 0, 0, 0.8);
-}
-.imgIcon {
-  width: 43px;
-  height: 43px;
-}
-.textIcon {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-.textIcon-hover {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: #ebedec;
-}
-.textIcon-active {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #995a13;
-}
 .grabMe-btn {
   text-align: center;
   font-family: "Avenir LT Std", sans-serif;
@@ -340,7 +295,7 @@ a:active {
   font-size: 45px;
   line-height: 54px;
   color: #ebedec;
-  background-color: rgba(0, 0, 0, 0.155);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-left: 10%;
 }
@@ -536,4 +491,177 @@ b {
   font-size: 13px;
   line-height: 13px;
   color: #000000;
+}
+
+@media (max-width: 1023px) {
+  .navigation-bar {
+    height: 56px;
+  }
+  .logo-home {
+    width: 110px;
+    height: 32px;
+  }
+  #catering-logo {
+    margin-right: 0;
+    width: 64px;
+    height: 26px;
+  }
+  .nav-item {
+    width: 67px;
+  }
+  .nav-menu {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 5px;
+    /* border: 1px solid orange; */
+  }
+  .nav-menu-link {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link:hover {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link:visited {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link-acitve {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #sectionOneBox {
+    height: 486px;
+    min-height: 486px;
+  }
+  #Box {
+    width: 112px;
+    height: 38px;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 106px;
+  }
+  .bar-dark {
+    width: 107px;
+    height: 5px;
+  }
+  .quoteDark {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    /* margin: 37px 0px; */
+  }
+  .box-content {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .box-pic {
+    width: 288px;
+    height: 328px;
+  }
+  .card-small {
+    width: 119px;
+  }
+  .card-img-small {
+    max-height: 112px;
+    border-radius: 10px;
+  }
+  .card-name-small {
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 700;
+  }
+  .card-name-thai-small {
+    font-weight: 350;
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .card-price-small {
+    font-weight: 350;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .scroll-box-short::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-box::-webkit-scrollbar {
+    display: none;
+  }
+  .grabMe-btn {
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+    height: 38px;
+    width: 104px;
+  }
+  .narrow-section {
+    width: 100%;
+    min-height: 200px;
+    background: url("../images/v205_735.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .quoteWhite {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  #box-member {
+    font-size: 33.75px;
+    line-height: 41px;
+    margin-top: 30px;
+  }
+}
+
+/* Mobile Screen Display=============================================================== */
+
+#mobileNavbar {
+  width: 100%;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.imgIcon {
+  width: 43px;
+  height: 43px;
+}
+.textIcon {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ebedec;
+}
+.textIcon-hover {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ebedec;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #ebedec;
+}
+.textIcon-active {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #995a13;
 }
