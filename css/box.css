@@ -493,6 +493,7 @@ b {
   color: #000000;
 }
 
+/* Tablet Screen Display============================================================================================== */
 @media (max-width: 1023px) {
   .navigation-bar {
     height: 56px;
@@ -664,4 +665,149 @@ a:active {
   line-height: 14px;
   text-align: center;
   color: #995a13;
+}
+
+#newMenu {
+  width: 212px;
+  height: 80px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 33.18px;
+  line-height: 40px;
+  text-align: center;
+  color: #ebedec;
+  margin-top: 78px;
+}
+.menu-header-mobile-dark {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 13.33px;
+  line-height: 16px;
+  color: #000000;
+}
+.bar-dark-mobile {
+  width: 44px;
+  height: 3px;
+  background: #000000;
+}
+#banner-mobile-1 {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
+    url(../images/v205_735.png);
+}
+#banner-mobile-2 {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
+    url(../images/v208_0.png);
+}
+.banner-mobile-header {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 13.33px;
+  line-height: 20px;
+  color: #fff;
+}
+.bar-white-mobile {
+  width: 44px;
+  height: 3px;
+  background: #ebedec;
+}
+.banner-mobile-list {
+  width: 74px;
+  height: 44px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11.11px;
+  line-height: 13px;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  #sectionOneBox {
+    height: 1vw;
+    min-height: 360px;
+    background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(61, 34, 17, 0.29) 60.42%
+      ),
+      url(../images/image-mobile/Meal-Page-Background.jpg);
+    background-size: cover;
+  }
+  .scroll-box-short::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-box::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-box-short {
+    width: 95vw;
+  }
+  .scroll-box {
+    width: 95vw;
+  }
+  .card-small {
+    width: 120px;
+
+    /* background: #EBEDEC; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+  }
+  .card-img-small {
+    max-height: 120px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .card-name-small {
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 600;
+  }
+  .card-name-thai-small {
+    display: inline-block;
+    width: 75%;
+    font-weight: 350;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-price-small {
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 9px;
+  }
+  .card-name-small-white {
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 600;
+  }
+  .card-name-thai-small-white {
+    display: inline-block;
+    width: 75%;
+    font-weight: 350;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .card-price-small-white {
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 9px;
+  }
+  .header-narrow {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  #box-member {
+    font-weight: 750;
+    font-size: 23px;
+    line-height: 28px;
+
+    color: #000000;
+    margin-top: 20px;
+  }
 }

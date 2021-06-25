@@ -111,59 +111,17 @@ body {
   text-decoration: none;
   color: #995a13;
 }
-
-/* Mobile Screen Display=========================================================================================== */
-
-#mobileNavbar {
-  width: 100%;
-  height: 65px;
-  background: rgba(0, 0, 0, 0.8);
-}
-.imgIcon {
-  width: 43px;
-  height: 43px;
-}
-.textIcon {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-.textIcon-hover {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #ebedec;
-}
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none;
-  color: #ebedec;
-}
-.textIcon-active {
-  font-family: "Avenir LT Std", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  color: #995a13;
-}
-
 /* Section One======================================= */
 #sectionOneEvent {
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background: url("../images/v144_464.png");
+  background: linear-gradient(
+      360deg,
+      #000000 -0.26%,
+      rgba(0, 0, 0, 0.25) 47.14%
+    ),
+    url("../images/v144_464.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -417,7 +375,6 @@ a:active {
   transition-duration: 0.25s;
   color: black;
 }
-
 /* Footer and Contacts======================================= */
 
 footer {
@@ -474,4 +431,338 @@ b {
   width: 32px;
   height: 32px;
   object-fit: cover;
+}
+
+/* Tablet Screen Display============================================================================================== */
+@media (max-width: 1023px) {
+  .navigation-bar {
+    height: 56px;
+  }
+  .logo-home {
+    width: 110px;
+    height: 32px;
+  }
+  #catering-logo {
+    margin-right: 0;
+    width: 64px;
+    height: 26px;
+  }
+  .nav-item {
+    width: 67px;
+  }
+  .nav-menu {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 5px;
+    /* border: 1px solid orange; */
+  }
+  .nav-menu-link {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link:hover {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link:visited {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav-menu-link-acitve {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  #sectionOneEvent {
+    height: 486px;
+    min-height: 486px;
+  }
+  #Events {
+    width: 112px;
+    height: 38px;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    margin-top: 106px;
+  }
+  .bar-light-long {
+    width: 107px;
+    height: 5px;
+  }
+  #contentOneEvent {
+    margin-top: 150px;
+    width: 404px;
+  }
+  #crafted {
+    font-size: 44.45px;
+    line-height: 53px;
+  }
+  #date-big {
+    font-size: 19.76px;
+    line-height: 24px;
+  }
+  .event-section-tall {
+    height: 342px;
+  }
+  .event-img-tall {
+    height: 342px;
+    object-fit: cover;
+  }
+  .event-name-white {
+    font-size: 25.3px;
+    line-height: 30px;
+  }
+  .bar-light-long {
+    width: 120px;
+    height: 4.5px;
+  }
+
+  .event-text-white {
+    font-size: 10.12px;
+    line-height: 12px;
+    color: rgba(235, 237, 236, 1);
+  }
+  .event-text-white-thai {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .date-box {
+    width: 80.83px;
+    height: 40.15px;
+  }
+  .date-bar {
+    height: 28.61px;
+    width: 1.5px;
+    background-color: rgba(235, 237, 236, 1);
+  }
+  .date {
+    font-size: 12.55px;
+    line-height: 20px;
+
+    width: 40px;
+  }
+  .event-pin {
+    width: 15px;
+    height: 17.75px;
+  }
+  .event-name-dark {
+    font-size: 25.3px;
+    line-height: 30px;
+  }
+  .bar-dark-long {
+    width: 120px;
+    height: 4.5px;
+  }
+
+  .event-text-dark {
+    font-size: 10.12px;
+    line-height: 12px;
+    color: #000;
+  }
+  .event-text-dark-thai {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  #event-banner {
+    height: 281px;
+  }
+  #event-banner-text {
+    font-size: 28.1px;
+    line-height: 34px;
+  }
+  .event-section-short {
+    height: 255.81px;
+  }
+  .event-img-short {
+    height: 255.81px;
+    object-fit: cover;
+  }
+  .event-name-white-short {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+  .event-text-white-thai-short {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+/* Mobile Screen Display=========================================================================================== */
+
+#mobileNavbar {
+  width: 100%;
+  height: 65px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.imgIcon {
+  width: 43px;
+  height: 43px;
+}
+.textIcon {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ebedec;
+}
+.textIcon-hover {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ebedec;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #ebedec;
+}
+.textIcon-active {
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #995a13;
+}
+#newMenu {
+  width: 212px;
+  height: 80px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 33.18px;
+  line-height: 40px;
+  text-align: center;
+  color: #ebedec;
+  margin-top: 78px;
+}
+
+@media (max-width: 767px) {
+  #sectionOneEvent {
+    height: 1vw;
+    min-height: 360px;
+    background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(61, 34, 17, 0.29) 60.42%
+      ),
+      url(../images/image-mobile/Meal-Page-Background.jpg);
+    background-size: cover;
+  }
+  .event-section-tall {
+    height: 160px;
+  }
+  .event-img-tall {
+    height: 160px;
+    object-fit: cover;
+  }
+  .event-name-white {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .bar-light-long {
+    width: 56px;
+    height: 2.1px;
+  }
+
+  .event-text-white {
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(235, 237, 236, 1);
+  }
+  .event-text-white-thai {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .date-box {
+    width: 56px;
+    height: 25.3px;
+  }
+  .date-bar {
+    /* margin-top: 3px; */
+    height: 17.61px;
+    width: 0.93px;
+    background-color: rgba(235, 237, 236, 1);
+  }
+  .date {
+    font-size: 7.734px;
+    line-height: 10px;
+
+    width: 20px;
+  }
+  .event-pin {
+    width: 10px;
+    height: 10px;
+  }
+  .event-name-dark {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .bar-dark-long {
+    width: 56px;
+    height: 2.1px;
+  }
+
+  .event-text-dark {
+    font-size: 10.12px;
+    line-height: 12px;
+    color: #000;
+  }
+  .event-text-dark-thai {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  #event-banner {
+    height: 281px;
+  }
+  #event-banner-text {
+    font-size: 28.1px;
+    line-height: 34px;
+  }
+  .event-section-short {
+    height: 255.81px;
+  }
+  .event-img-short {
+    height: 255.81px;
+    object-fit: cover;
+  }
+  .event-name-white-short {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+  .event-text-white-thai-short {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  #event-banner {
+    height: 131.8px;
+  }
+  #event-banner-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .event-section-short {
+    height: 120px;
+  }
+  .event-img-short {
+    height: 120px;
+    object-fit: cover;
+  }
+  .event-name-white-short {
+    font-size: 10.6px;
+    line-height: 13px;
+  }
+  .event-text-white-thai-short {
+    font-size: 8px;
+    line-height: 10px;
+  }
 }
