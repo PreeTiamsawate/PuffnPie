@@ -16,19 +16,20 @@ for (mobileLink of mobileLinks) {
     mobileLink.children[1].classList.remove("d-none");
     mobileLink.children[3].classList.remove("textIcon");
     mobileLink.children[3].classList.add("textIcon-active");
+  } else {
+    mobileLink.addEventListener("touchstart", function () {
+      this.children[0].classList.add("d-none");
+      this.children[0].classList.remove("d-block");
+      this.children[2].classList.add("d-block");
+      this.children[2].classList.remove("d-none");
+      this.children[3].classList.add("textIcon-hover");
+    });
+    mobileLink.addEventListener("touchend", function () {
+      this.children[0].classList.add("d-block");
+      this.children[0].classList.remove("d-none");
+      this.children[2].classList.add("d-none");
+      this.children[2].classList.remove("d-block");
+      this.children[3].classList.remove("textIcon-hover");
+    });
   }
-  mobileLink.addEventListener("touchstart", function () {
-    this.children[0].classList.add("d-none");
-    this.children[0].classList.remove("d-block");
-    this.children[2].classList.add("d-block");
-    this.children[2].classList.remove("d-none");
-    this.children[3].classList.add("textIcon-hover");
-  });
-  mobileLink.addEventListener("touchend", function () {
-    this.children[0].classList.add("d-block");
-    this.children[0].classList.remove("d-none");
-    this.children[2].classList.add("d-none");
-    this.children[2].classList.remove("d-block");
-    this.children[3].classList.remove("textIcon-hover");
-  });
 }

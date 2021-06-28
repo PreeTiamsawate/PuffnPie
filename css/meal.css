@@ -501,7 +501,7 @@ footer {
 }
 
 .contactDetail {
-  width: 100%;
+  width: 30%;
   color: rgba(235, 237, 236, 1);
   /* position: absolute;
   top: 2319px;
@@ -529,26 +529,12 @@ b {
   opacity: 1;
   text-align: left;
 }
-.fb-icon {
+.social-icon {
   width: 32px;
   height: 32px;
   object-fit: cover;
 }
-.line-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-}
-.ig-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-}
-.tik-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-}
+
 /* Scroll Bar=========================== */
 ::-webkit-scrollbar {
   height: 8px;
@@ -945,6 +931,9 @@ a:active {
   .header-narrow {
     font-size: 35px;
     line-height: 38px;
+  }
+  .contactDetail {
+    width: 48%;
   }
 }
 
