@@ -126,10 +126,10 @@ body {
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background: url("../images/v144_464.png");
+  /* background: url("../images/v144_464.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   overflow: hidden;
   margin-top: 0x;
@@ -191,6 +191,10 @@ body {
   background: rgba(0, 0, 0, 1);
   opacity: 1;
   overflow: hidden;
+}
+.hero-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .card-big {
   min-width: 230px;
@@ -723,10 +727,10 @@ b {
     font-size: 13px;
     line-height: 14px;
   }
-  .scroll-box-short::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
-  .scroll-box::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
   .grabMe-btn {
@@ -800,9 +804,9 @@ a:active {
 #sectionOneBakery-mobile {
   height: 1vw;
   min-height: 360px;
-  background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
+  /* background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
     url(../images/image-mobile/Bakery-Page-Backgound.jpg);
-  background-size: cover;
+  background-size: cover; */
   padding-top: 80px;
 }
 #newMenu {

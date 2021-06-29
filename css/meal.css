@@ -172,6 +172,14 @@ border: 1px solid red;
   opacity: 1;
   overflow: hidden;
 }
+.hero-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* .hero-scroll::-webkit-scrollbar {
+  display: none;
+} */
 .card-big {
   min-width: 230px;
   width: 30%;
@@ -709,12 +717,10 @@ b {
     font-size: 13px;
     line-height: 14px;
   }
-  .scroll-box-short::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
-  .scroll-box::-webkit-scrollbar {
-    display: none;
-  }
+
   .grabMe-btn {
     font-weight: 350;
     font-size: 18px;
@@ -865,10 +871,10 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  .scroll-box-short::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
-  .scroll-box::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
   .scroll-box-short {
