@@ -61,7 +61,6 @@
                             <b>Address :</b> THAI Catering, Sanambin, Don Mueang, Bangkok 10210
                         </p>
                     </div> -->
-                   
                 </div>
             </div>
         </footer>
