@@ -618,6 +618,14 @@ a:active {
   text-align: center;
   color: #995a13;
 }
+#sectionOneEvent-mobile {
+  height: 1vw;
+  min-height: 360px;
+  background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
+    url(../images/image-mobile/Meal-Page-Background.jpg);
+  background-size: cover;
+  padding-top: 80px;
+}
 #newMenu {
   width: 212px;
   height: 80px;
@@ -628,21 +636,9 @@ a:active {
   line-height: 40px;
   text-align: center;
   color: #ebedec;
-  margin-top: 78px;
 }
 
 @media (max-width: 767px) {
-  #sectionOneEvent {
-    height: 1vw;
-    min-height: 360px;
-    background: linear-gradient(
-        180deg,
-        #000000 0%,
-        rgba(61, 34, 17, 0.29) 60.42%
-      ),
-      url(../images/image-mobile/Meal-Page-Background.jpg);
-    background-size: cover;
-  }
   .event-section-tall {
     height: 160px;
   }

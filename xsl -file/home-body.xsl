@@ -115,3 +115,62 @@
 		</xsl:choose>
 	</xsl:template>
 </xsl:stylesheet>    
+
+<!--Original HTML============================================================ -->
+<section id="sectionTwo">
+
+        <div class="container mx-auto  row">
+            <div class="d-md-none my-3">
+                <h2 id="body-header-mobile" class="mt-2 mb-2">
+                    Taste <br>
+                    of Passion
+                </h2>
+                <div class="bar-light-mobile"></div>
+
+
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
+                <h2 id="body-header">
+                    Taste <br>
+                    of Passion
+                </h2>
+                <div class="bar-dark ms-lg-3 ms-0"></div>
+                <div id="body-paragraph" class=" pe-md-5 pe-lg-1">
+                    <p class="">
+                        With our passion of making your everyday dinning delightful <br>
+                        and special, we are proud to deliver our bakery, beverages and meal to fulfill your day.
+                    </p>
+
+
+                    <p class="">
+                        If you want to enlighten your meeting with well-crafted meal boxes <br> or sanck box, we also
+                        pleased
+                        to <br>
+                        create your impressive events with our customized service just in time.
+                    </p>
+
+
+                    <p class="">
+                        Now, let's grab your favorite ones <br> to make you day better!
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill grabMe-btn">Grab Me!</button>
+            </div>
+            <div
+                class="col-md-3 col-lg-4 col-6 ps-0 pe-1 px-md-auto contentTwo d-flex flex-column align-items-end justify-content-md-start justify-content-end ">
+                <a href="./Bakery.html" class="foodLink my-1 my-md-3"><img src="./images/v41_21.png"
+                        class="img-link"></a>
+                <a href="./Meal.html" class="foodLink my-1 my-md-3"><img src="./images/v41_25.png" class="img-link"></a>
+
+
+            </div>
+            <div
+                class="col-md-3 col-lg-4 col-6 pe-0 ps-1 px-md-auto contentTwo d-flex flex-column align-items-start justify-content-md-end justify-content-start">
+                <a href="./Event.html" class="foodLink my-1 my-md-3"><img src="./images/v41_24.png"
+                        class="img-link"></a>
+                <a href="./Box.html" class="foodLink my-1 my-md-3"><img src="./images/v41_26.png" class="img-link"></a>
+
+            </div>
+        </div>
+    </section>

@@ -651,6 +651,14 @@ a:active {
   text-align: center;
   color: #995a13;
 }
+#sectionOneBox-mobile {
+  height: 1vw;
+  min-height: 360px;
+  background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
+    url(../images/image-mobile/Meal-Page-Background.jpg);
+  background-size: cover;
+  padding-top: 80px;
+}
 
 #newMenu {
   width: 212px;
@@ -662,7 +670,6 @@ a:active {
   line-height: 40px;
   text-align: center;
   color: #ebedec;
-  margin-top: 78px;
 }
 .menu-header-mobile-dark {
   font-family: "Avenir LT Std", sans-serif;
@@ -713,17 +720,6 @@ a:active {
   color: #fff;
 }
 @media (max-width: 767px) {
-  #sectionOneBox {
-    height: 1vw;
-    min-height: 360px;
-    background: linear-gradient(
-        180deg,
-        #000000 0%,
-        rgba(61, 34, 17, 0.29) 60.42%
-      ),
-      url(../images/image-mobile/Meal-Page-Background.jpg);
-    background-size: cover;
-  }
   .scroll-box-short::-webkit-scrollbar {
     display: none;
   }

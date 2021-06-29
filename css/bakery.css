@@ -797,7 +797,14 @@ a:active {
   text-align: center;
   color: #995a13;
 }
-
+#sectionOneBakery-mobile {
+  height: 1vw;
+  min-height: 360px;
+  background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
+    url(../images/image-mobile/Bakery-Page-Backgound.jpg);
+  background-size: cover;
+  padding-top: 80px;
+}
 #newMenu {
   width: 212px;
   height: 80px;
@@ -808,7 +815,6 @@ a:active {
   line-height: 40px;
   text-align: center;
   color: #ebedec;
-  margin-top: 78px;
 }
 #contentOneBakery-mobile {
   width: 105%;
@@ -869,13 +875,6 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  #sectionOneBakery {
-    height: 1vw;
-    min-height: 360px;
-    background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
-      url(../images/image-mobile/Bakery-Page-Backgound.jpg);
-    background-size: cover;
-  }
   .scroll-box-short::-webkit-scrollbar {
     display: none;
   }
