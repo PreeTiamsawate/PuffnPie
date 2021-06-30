@@ -15,7 +15,7 @@
             </xsl:attribute>
             <xsl:element name="div">
                 <xsl:attribute name="id">letsMeetUs</xsl:attribute>
-                <xsl:value-of select="######" />
+                <xsl:value-of select="######" disable-output-escaping="yes" />
             </xsl:element>
             <xsl:element name="a">
                 <xsl:attribute name="class">btn btn-primary btn-lg rounded-pill visitShops-btn</xsl:attribute>
@@ -50,7 +50,7 @@
                     <xsl:for-each select="######">
                         <xsl:element name="div">
                             <xsl:attribute name="class">h-auto  contacts contactDetail pt-4</xsl:attribute>
-                            <xsl:value-of select="######" />
+                            <xsl:value-of select="######" disable-output-escaping="yes" />
                         </xsl:element>
                     </xsl:for-each>
 

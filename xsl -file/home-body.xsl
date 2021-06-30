@@ -13,7 +13,7 @@
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header-mobile</xsl:attribute>
                         <xsl:attribute name="class">mt-2 mb-2</xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-light-mobile"></div>
@@ -22,7 +22,7 @@
                 <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header</xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-dark ms-lg-3 ms-0"></div>
@@ -30,7 +30,7 @@
                     <xsl:element name="div">
                         <xsl:attribute name="id">body-paragraph</xsl:attribute>
                         <xsl:attribute name="class">pe-md-5 pe-lg-1</xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
                     </xsl:element>
 
                      <xsl:element name="a">

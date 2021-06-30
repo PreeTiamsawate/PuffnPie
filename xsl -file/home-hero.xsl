@@ -18,13 +18,13 @@
                 <div class=" mx-5 " id="contentOne">
                     <xsl:element name="h1">
                         <xsl:attribute name="id">goodMorning</xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
                     </xsl:element>
                     <div class="bar-light mt-lg-3 mb-4"></div>
                     <xsl:element name="div">
                         <xsl:attribute name="id">weGetYou</xsl:attribute>
                         <xsl:attribute name="class">d-none d-lg-block</xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
                     </xsl:element>
                     <xsl:element name="a">
                         <xsl:attribute name="class">btn btn-primary btn-lg rounded-pill grabMe-btn</xsl:attribute>
@@ -72,7 +72,7 @@
                             </xsl:element>
                             <xsl:element name="h2">
                                 <xsl:attribute name="class">promotion-card-text w-100 position-absolute bottom-0 ps-3 m-0</xsl:attribute>
-                                <xsl:value-of select="######" />
+                                <xsl:value-of select="######" disable-output-escaping="yes" />
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>

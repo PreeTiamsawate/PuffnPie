@@ -19,7 +19,7 @@
                 <xsl:element name="h1">
                     <xsl:attribute name="id">Bakery</xsl:attribute>
                     <xsl:attribute name="class">mx-auto mb-lg-2  mb-1 d-md-block d-none</xsl:attribute>
-                    <xsl:value-of select="######" />
+                    <xsl:value-of select="######" disable-output-escaping="yes" />
                 </xsl:element>
             
                 <div class="bar-light-long ms-2 mx-md-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
@@ -28,7 +28,7 @@
                     <div class="mx-md-5">
                         <xsl:element name="h2">
                             <xsl:attribute name="class">newArrivals mt-0</xsl:attribute>
-                            <xsl:value-of select="######" />
+                            <xsl:value-of select="######" disable-output-escaping="yes" />/>
                         </xsl:element>
                         
                         <div class="bar-dark-sm "></div>
@@ -40,37 +40,37 @@
                                     <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
                                     <xsl:element name="img">
                                         <xsl:attribute name="class">d-block card-img-big</xsl:attribute>
-                                        <xsl:attribute name="src"><xsl:for-each select="######"></xsl:attribute>
+                                        <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">card-text w-100 h-auto pt-1</xsl:attribute>
                                         <xsl:element name="p">
                                             <xsl:attribute name="class">card-name-big</xsl:attribute>
-                                            <xsl:for-each select="######">
+                                            <xsl:value-of select="######" disable-output-escaping="yes" />
                                         </xsl:element>
                                         <xsl:element name="span">
                                             <xsl:attribute name="class">card-name-thai-big</xsl:attribute>
-                                            <xsl:for-each select="######">
+                                            <xsl:value-of select="######" disable-output-escaping="yes" />
                                         </xsl:element>
                                         <xsl:element name="span">
                                             <xsl:attribute name="class">card-price-big float-end</xsl:attribute>
-                                            <xsl:for-each select="######">
+                                            <xsl:value-of select="######" disable-output-escaping="yes" />
                                         </xsl:element>
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                        <xsl:for-each select="######">
+                                        <xsl:value-of select="######" disable-output-escaping="yes" />
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                        <xsl:for-each select="######">
+                                        <xsl:value-of select="######" disable-output-escaping="yes" />
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">preservation d-none</xsl:attribute>
-                                        <xsl:for-each select="######">
+                                        <xsl:value-of select="######" disable-output-escaping="yes" />
                                     </xsl:element>
                                 </xsl:element>
-                            </xsl:for-each>s
+                            </xsl:for-each>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                 <xsl:element name="h1">
                     <xsl:attribute name="id">newMenu</xsl:attribute>
                     <xsl:attribute name="class">mx-auto d-md-none d-block</xsl:attribute>
-                    <xsl:value-of select="######" />
+                    <xsl:value-of select="######" disable-output-escaping="yes" />
                 </xsl:element>
               
                 <div id="contentOneBakery-mobile" class="d-block d-md-none d-flex flex-row overflow-auto mt-5  h-auto">
@@ -99,27 +99,27 @@
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                             <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
                             <xsl:element name="img">
-                                <xsl:attribute name="src"><xsl:for-each select="######"></xsl:attribute>
+                                <xsl:attribute name="src"><xsl:value-of select="######"/></xsl:attribute>
                                 <xsl:attribute name="class">d-block w-100 h-100 newMenu-card-img</xsl:attribute>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">newMenu-card-text w-100</xsl:attribute>
                                 <xsl:element name="h4">
                                     <xsl:attribute name="class">newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2</xsl:attribute>
-                                    <xsl:for-each select="######">
+                                    <xsl:value-of select="######" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                <xsl:for-each select="######">
+                                <xsl:value-of select="######" disable-output-escaping="yes" />
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                <xsl:for-each select="######">
+                                <xsl:value-of select="######" disable-output-escaping="yes" />
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
-                                <xsl:for-each select="######">
+                                <xsl:value-of select="######" disable-output-escaping="yes" />
                             </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
