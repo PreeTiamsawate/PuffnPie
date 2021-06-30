@@ -373,10 +373,9 @@ border: 1px solid red;
   width: 100%;
 
   min-height: 300px;
-  background: url("../images/v220_36.png");
+  /* background: url("../images/v220_36.png");
   background-repeat: no-repeat;
-  /* background-position: -0 -100px;  */
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   /* position: absolute;
     top: 0px;
