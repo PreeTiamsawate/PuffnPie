@@ -9,7 +9,8 @@
         <xsl:element name="section">
             <xsl:attribute name="id">sectionOneHome</xsl:attribute>
             <xsl:attribute name="class">d-none d-md-block</xsl:attribute>
-            <xsl:attribute name="style">background: url(<xsl:value-of select="######" />);
+            <xsl:attribute name="style">
+                background: url(<xsl:value-of select="######" />);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
