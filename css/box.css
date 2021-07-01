@@ -116,10 +116,10 @@ border: 1px solid red;
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background: url("../images/v205_735.png");
+  /* background: url("../images/v205_735.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   overflow: hidden;
   margin-top: 0x;
@@ -654,9 +654,9 @@ a:active {
 #sectionOneBox-mobile {
   height: 1vw;
   min-height: 360px;
-  background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
+  /* background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
     url(../images/image-mobile/Meal-Page-Background.jpg);
-  background-size: cover;
+  background-size: cover; */
   padding-top: 80px;
 }
 
