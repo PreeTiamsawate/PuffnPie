@@ -291,14 +291,14 @@ body {
 #event-banner {
   width: 100%;
   height: 450px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       360deg,
       #000000 -0.26%,
       rgba(0, 0, 0, 0.25) 47.14%
     ),
     url(../images/v220_55.png);
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   overflow: hidden;
 }
