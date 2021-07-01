@@ -281,10 +281,9 @@ border: 1px solid red;
   width: 100%;
   min-height: 300px;
   /* background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 53.12%); */
-  background: url("../images/v205_735.png");
-
+  /* background: url("../images/v205_735.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   overflow: hidden;
 }
