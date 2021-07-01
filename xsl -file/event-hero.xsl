@@ -7,43 +7,49 @@
 	<xsl:template match="/">
         <!-- Section one Desktop==================================================================== -->
         <xsl:element name="section">
-            <xsl:attribute name="id">sectionOneBox</xsl:attribute>
+            <xsl:attribute name="id">sectionOneEvent</xsl:attribute>
             <xsl:attribute name="class">d-none d-md-block</xsl:attribute>
             <xsl:attribute name="style">
-                background: url(<xsl:value-of select="######" />);
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: cover;
+                background: linear-gradient(
+                360deg,#000000 -0.26%,rgba(0, 0, 0, 0.25) 47.14%),
+                url(<xsl:value-of select="######" />); 
+                background-repeat: no-repeat; 
+                background-position: center center; 
+                background-size:
+                cover;
             </xsl:attribute>
             <div class="container">
-                 <xsl:element name="h1">
-                    <xsl:attribute name="id">Box</xsl:attribute>
-                    <xsl:attribute name="class">mx-auto  mb-lg-2  mb-1 d-md-block d-none</xsl:attribute>
+                <h1 id="Events" class="mx-auto mb-lg-2  mb-1 d-md-block d-none ">
                     <xsl:value-of select="######" disable-output-escaping="yes" />
-                </xsl:element>
-                <div class="bar-dark mx-auto my-1 my-lg-4 my-md-3 d-md-block d-none"></div>
+                </h1>
+                <div class="bar-light-long ms-2 mx-md-auto my-1  my-md-3 d-md-block d-none"></div>
+                <div id="contentOneEvent" class="mx-auto h-auto d-md-block d-none">
+                    <h2 id="crafted">
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
+                    </h2>
+                    <div id="bar-superLong" class="w-100 my-3"></div>
+                    <h3 id="date-big">
+                        <xsl:value-of select="######" disable-output-escaping="yes" />
+                    </h3>
+                </div>
             </div>
         </xsl:element>
-
+        
         <!-- Section One for Mobile==================================================================== -->
         <xsl:element name="section">
-            <xsl:attribute name="id">sectionOneBox-mobile</xsl:attribute>
+            <xsl:attribute name="id">sectionOneEvent-mobile</xsl:attribute>
             <xsl:attribute name="class">d-md-none</xsl:attribute>
             <xsl:attribute name="style">
                 background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
                 url(<xsl:value-of select="######" />);
-                background-size: cover;"
+                background-size: cover;
             </xsl:attribute>
             <div class="container">
-                <xsl:element name="h1">
-                    <xsl:attribute name="id">newMenu</xsl:attribute>
-                    <xsl:attribute name="class">mx-auto d-md-none d-block</xsl:attribute>
+                <h1 id='newMenu' class="mx-auto d-md-none d-block ">
                     <xsl:value-of select="######" disable-output-escaping="yes" />
-                </xsl:element>
+                </h1>
             </div>
         </xsl:element>
-
-
     </xsl:template>
 
 <xsl:template name="addLink">

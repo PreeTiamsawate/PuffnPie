@@ -116,7 +116,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
       360deg,
       #000000 -0.26%,
       rgba(0, 0, 0, 0.25) 47.14%
@@ -124,7 +124,7 @@ body {
     url("../images/v144_464.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
   opacity: 1;
   overflow: hidden;
   margin-top: 0x;
@@ -314,7 +314,7 @@ body {
   height: 450px;
 }
 .event-img-short {
-  filter: contrast(175%) brightness(50%);
+  /* filter: contrast(175%) brightness(80%); */
   width: 100%;
   height: 450px;
   object-fit: cover;
@@ -621,9 +621,9 @@ a:active {
 #sectionOneEvent-mobile {
   height: 1vw;
   min-height: 360px;
-  background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
+  /* background: linear-gradient(180deg, #000000 0%, rgba(61, 34, 17, 0.29) 60.42%),
     url(../images/image-mobile/Meal-Page-Background.jpg);
-  background-size: cover;
+  background-size: cover; */
   padding-top: 80px;
 }
 #newMenu {
