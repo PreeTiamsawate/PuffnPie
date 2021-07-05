@@ -17,7 +17,7 @@
     <link rel="icon" href="./favicon.ico">
 </head>
 
-<body onload="showShopsByDistance()">
+<body>
     <nav class="navbar navbar-expand-md navigation-bar d-none d-md-block fixed-top">
         <div class="container mt-lg-2">
             <a class="navbar-brand ms-md-3" href="./Home.html">
@@ -107,33 +107,60 @@
                 On the Go
             </h2>
             <div class="bar-light-small mt-2"></div>
-            <div id="toGoShops" class="d-flex flex-row overflow-auto scroll-box-shops my-2 p-0 mt-3 ">
-                <!-- <div class="card-shops-small flex-shrink-0 mx-2 position-relative">
-                     <div class = 'd-none'>
-                            iframe of the Map
-                    </div>   
-                    <img src="./images/branch.jpg" alt="image not available" class="d-block card-img-shop">
-                 
-                    
+            <div id="toGoShopParent" class="d-flex flex-row overflow-auto scroll-box-shops my-2 p-0 mt-3 ">
+                <div class="toGoShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.7804774'
+                    longitude='100.5084252'
+                    mapIframe='<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62005.1365001078!2d100.5149785!3d13.7595038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc780c577c7163ab!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659887068!5m2!1sen!2sth"  height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/Samsen-Rd.jpg" alt="image not available" class="d-block card-img-shop">
                     <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
                         <span class="float-start mt-1">
                             <div class="shop">Puff & Pie</div>
-                            <div class="branch mt-1">Gateway Ekkamai</div>
+                            <div class="branch mt-1">Samsen Rd</div>
                         </span>
-                        
                         <span class="float-end mb-1">
                             <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
                             <div class="distance mt-1">
-                                20 km
                             </div>
                         </span>
-                       
-                    </div>  
-                </div> -->
+                    </div>
+                </div>
+                <div class="toGoShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.909141'
+                    longitude='100.6172772'
+                    mapIframe='<iframe class="w-100"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61973.834214915434!2d100.6122509!3d13.877132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15f7a3b378d99a15!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659203803!5m2!1sen!2sth" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/Phahonyothin-Rd.jpg" alt="image not available" class="d-block card-img-shop">
+                    <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
+                        <span class="float-start mt-1">
+                            <div class="shop">Puff & Pie</div>
+                            <div class="branch mt-1">171 Phahonyothin Rd</div>
+                        </span>
+                        <span class="float-end mb-1">
+                            <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
+                            <div class="distance mt-1">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="toGoShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.834142'
+                    longitude='100.61082'
+                    mapIframe='<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d123992.89265444528!2d100.6342378!3d13.7922585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa8b18d2af6c40ac6!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1623659534286!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/Nawain-City.jpg" alt="image not available" class="d-block card-img-shop">
+                    <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
+                        <span class="float-start mt-1">
+                            <div class="shop">Puff & Pie</div>
+                            <div class="branch mt-1">Nawamin City Av</div>
+                        </span>
+                        <span class="float-end mb-1">
+                            <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
+                            <div class="distance mt-1">
+                            </div>
+                        </span>
+                    </div>
+                </div>
 
             </div>
             <div id="toGo-map" class="w-100">
-
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247882.7721857162!2d100.531706!3d13.888882000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623655028026!5m2!1sen!2sth" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe> -->
             </div>
         </div>
         <div class="place-box mx-lg-5 px-lg-5 px-0 mx-2 my-4">
@@ -141,38 +168,69 @@
                 Sit-In Shops
             </h2>
             <div class="bar-light-small mt-2"></div>
-            <div id="sitInShops" class="d-flex flex-row overflow-auto scroll-box-shops my-2 p-0 mt-3 ">
-                <!-- <div class="card-shops-small flex-shrink-0 mx-2 position-relative">
-                        <div class = 'd-none'>
-                            iframe of the Map
-                        </div>   
-                        <img src="./images/branch.jpg" alt="image not available" class="d-block card-img-shop">
-                 
-                    
+            <div id="sitInShopParent" class="d-flex flex-row overflow-auto scroll-box-shops my-2 p-0 mt-3 ">
+                <div class="sitInShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.8385122'
+                    longitude='100.5514109'
+                    mapIframe='<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247987.05778709744!2d100.5844061!3d13.7910608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7c6cc42a1a9e5df2!2zUHVmZiBBbmQgUGllIOC4muC4reC4h-C4oeC4suC4o-C5jOC5gOC4iuC5iA!5e0!3m2!1sen!2sth!4v1623659632306!5m2!1sen!2sth" height="350"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/BonMarche.jpg" alt="image not available" class="d-block card-img-shop">
                     <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
                         <span class="float-start mt-1">
                             <div class="shop">Puff & Pie</div>
-                            <div class="branch mt-1">Gateway Ekkamai</div>
+                            <div class="branch mt-1">Bon Marche' Mk</div>
                         </span>
-                        
                         <span class="float-end mb-1">
                             <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
                             <div class="distance mt-1">
-                                20 km
                             </div>
                         </span>
-                       
-                    </div>  
-                </div> -->
+                    </div>
+                </div>
+                <div class="sitInShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.7614981'
+                    longitude='100.5366126'
+                    mapIframe='<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.464017064198!2d100.5312749!3d13.7567882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb5cab704fb733ec!2zUHVmZiBhbmQgUGllIOC4iuC4uOC4lOC4reC4suC4q-C4suC4o-C4p-C5iOC4suC4h-C4iOC4suC4geC4hOC4o-C4seC4p-C4geC4suC4o-C4muC4tOC4meC5hOC4l-C4og!5e0!3m2!1sen!2sth!4v1623659976699!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/Century.jpg" alt="image not available" class="d-block card-img-shop">
+                    <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
+                        <span class="float-start mt-1">
+                            <div class="shop">Puff & Pie</div>
+                            <div class="branch mt-1">Century Plaza</div>
+                        </span>
+                        <span class="float-end mb-1">
+                            <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
+                            <div class="distance mt-1">
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="sitInShop card-shops-small flex-shrink-0 mx-2 position-relative" latitude='13.8975469'
+                    longitude='100.5896402'
+                    mapIframe='<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30984.30610632159!2d100.5969406!3d13.8966603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623659410880!5m2!1sen!2sth" height="350"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>'>
+                    <img src="./images/Don-Muang.jpg" alt="image not available" class="d-block card-img-shop">
+                    <div class="card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0">
+                        <span class="float-start mt-1">
+                            <div class="shop">Puff & Pie</div>
+                            <div class="branch mt-1">Don Muang</div>
+                        </span>
+                        <span class="float-end mb-1">
+                            <img src="./images/placeholder.png" class="location-pin  me-2" alt="" srcset="">
+                            <div class="distance mt-1">
+                            </div>
+                        </span>
+                    </div>
+                </div>
 
             </div>
             <div id="sitIn-map" class="w-100">
 
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247882.7721857162!2d100.531706!3d13.888882000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623655028026!5m2!1sen!2sth" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe> -->
             </div>
         </div>
     </section>
 
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247882.7721857162!2d100.531706!3d13.888882000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2e5b57efdfc73bf!2sPuff%20and%20Pie!5e0!3m2!1sen!2sth!4v1623655028026!5m2!1sen!2sth" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe> -->
+
+
+
+
+
 
     <footer id="contentFooter" class=" w-100 h-auto pb-5">
         <div class="container h-auto row mx-auto px-0">
