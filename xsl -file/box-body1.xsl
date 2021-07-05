@@ -67,7 +67,7 @@
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                            <xsl:attribute name="data-bs-target">#modal-box</xsl:attribute>
+                                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
                                                     <xsl:value-of select="######" />
@@ -171,7 +171,7 @@
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                            <xsl:attribute name="data-bs-target">#modal-box</xsl:attribute>
+                                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
                                                     <xsl:value-of select="######" />

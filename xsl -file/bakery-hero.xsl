@@ -36,7 +36,7 @@
                                 <xsl:element name="div">
                                     <xsl:attribute name="class">card-big flex-shrink-0 mx-1</xsl:attribute>
                                     <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                    <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                                    <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                     <xsl:element name="img">
                                         <xsl:attribute name="class">d-block card-img-big</xsl:attribute>
                                         <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
@@ -96,7 +96,7 @@
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-mobile-new flex-shrink-0 mx-2 position-relative</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                            <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src"><xsl:value-of select="######"/></xsl:attribute>
                                 <xsl:attribute name="class">d-block w-100 h-100 newMenu-card-img</xsl:attribute>
@@ -165,7 +165,7 @@
 
             <div id="contentOneBakery-mobile" class="d-block d-md-none d-flex flex-row overflow-auto mt-5  h-auto">
                 <div class="card-mobile-new flex-shrink-0 mx-2 position-relative " data-bs-toggle="modal"
-                    data-bs-target="#modal-bakery">
+                    data-bs-target="#modal-product">
                     <img src="./images/v41_21.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
                         <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
-                    data-bs-target="#modal-bakery">
+                    data-bs-target="#modal-product">
                     <img src="./images/v41_24.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
                         <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="card-mobile-new flex-shrink-0 mx-2 position-relative" data-bs-toggle="modal"
-                    data-bs-target="#modal-bakery">
+                    data-bs-target="#modal-product">
                     <img src="./images/v41_25.png" alt="" class="d-block w-100 h-100 newMenu-card-img">
                     <div class=" newMenu-card-text w-100   ">
                         <h4 class="newMenu-card-name w-100 position-absolute bottom-0 mx-auto ps-3 mb-0 pb-2">

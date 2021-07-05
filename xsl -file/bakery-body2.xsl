@@ -58,7 +58,7 @@
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                            <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
                                     <xsl:value-of select="######" />
@@ -147,7 +147,7 @@
                             <xsl:element name="div">
                                 <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                                <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                 <xsl:element name="img">
                                     <xsl:attribute name="src">
                                         <xsl:value-of select="######" />
@@ -212,7 +212,7 @@
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                            <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
                                     <xsl:value-of select="######" />
@@ -266,7 +266,7 @@
 
         <!-- Modal Section -->
 
-        <div class="modal fade" id="modal-bakery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-img-contaniner position-relative mx-md-5 mt-md-3">

@@ -984,6 +984,10 @@ a:active {
   transition-property: font-weight, background-color;
   transition-duration: 0.25s;
 }
+.grabMe-btn-modal:hover {
+  font-weight: 600;
+  background-color: var(--token-0161928c-161b-46bf-b35a-ba4215b6b0c0, #3d2211);
+}
 .btn-close-custom {
   width: 20px;
   height: 20px;

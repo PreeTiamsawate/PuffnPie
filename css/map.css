@@ -269,13 +269,14 @@ b {
 
 #visitOurShops {
   width: 350px;
-  height: 75px;
+  height: 70px;
   color: rgba(235, 237, 236, 1);
   /* position: absolute;
     top: 42px;
     left: 480px; */
   font-family: "Avenir LT Std", sans-serif;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
   font-weight: 45;
   font-size: 50px;
   opacity: 1;

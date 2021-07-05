@@ -36,7 +36,7 @@
                                 <xsl:element name="div">
                                     <xsl:attribute name="class">card-big flex-shrink-0 mx-1</xsl:attribute>
                                     <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                    <xsl:attribute name="data-bs-target">#modal-meal</xsl:attribute>
+                                    <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                     <xsl:element name="img">
                                         <xsl:attribute name="class">d-block card-img-big</xsl:attribute>
                                         <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
@@ -96,7 +96,7 @@
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-mobile-new flex-shrink-0 mx-2 position-relative</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                            <xsl:attribute name="data-bs-target">#modal-meal</xsl:attribute>
+                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src"><xsl:value-of select="######"/></xsl:attribute>
                                 <xsl:attribute name="class">d-block w-100 h-100 newMenu-card-img</xsl:attribute>

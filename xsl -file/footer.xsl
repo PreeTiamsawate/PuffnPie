@@ -9,7 +9,9 @@
         <xsl:element name="section">
             <xsl:attribute name="id">sectionThree</xsl:attribute>
             <xsl:attribute name="class">v41_32 d-flex flex-column justify-content-center align-items-center</xsl:attribute>
-            <xsl:attribute name="style">background: url(<xsl:value-of select="######" />);background-repeat: no-repeat;
+            <xsl:attribute name="style">
+            background: url(<xsl:value-of select="######" />);
+            background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             </xsl:attribute>

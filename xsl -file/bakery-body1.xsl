@@ -50,7 +50,7 @@
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                            <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
                                                     <xsl:value-of select="######" />
@@ -127,7 +127,7 @@
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                                            <xsl:attribute name="data-bs-target">#modal-bakery</xsl:attribute>
+                                            <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
                                                     <xsl:value-of select="######" />
@@ -245,7 +245,7 @@
             <div id="orignalBox"
                 class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-3 float-md-end ">
 
-                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-bakery">
+                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
                     <img src="./images/v41_21.png" alt="image not available" class="d-block card-img-small">
                     <div class="card-text w-100 h-auto pt-1 ps-1">
                         <p class="card-name-small mb-md-1">Test<br>Croissant</p>
