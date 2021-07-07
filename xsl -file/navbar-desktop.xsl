@@ -10,34 +10,33 @@
             <div class="container mt-lg-2">
                 <xsl:element name="a">
                     <xsl:attribute name="class">navbar-brand ms-md-3</xsl:attribute>
-                    <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                    <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
+                    <xsl:attribute name="href">??????</xsl:attribute>
                     <xsl:element name="img">
                         <xsl:attribute name="class">logo-home</xsl:attribute>
-                        <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                        <xsl:attribute name="src"><xsl:value-of select="logo_link" /></xsl:attribute>
                     </xsl:element>
                 </xsl:element>
             
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-lg-0 mb-md-2  nav-menu d-md-flex justify-content-between">
-                        <xsl:for-each select="######">
+                        <xsl:for-each select="header_menu">
                             <xsl:element name="li">
                                 <xsl:attribute name="class">nav-item</xsl:attribute>
                                 <xsl:element name="a">
                                     <xsl:attribute name="class">nav-link nav-menu-link</xsl:attribute>
-                                    <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                                    <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
-                                    <xsl:value-of select="######" />
+                                    <xsl:attribute name="href"><xsl:value-of select="menu_link" /></xsl:attribute>
+                                    <xsl:attribute name="target"><xsl:value-of select="target_link"/></xsl:attribute>
+                                    <xsl:value-of select="menu_name" />
                                 </xsl:element>
                             </xsl:element>
                         </xsl:for-each>
                     </ul>
                     <xsl:element name="a">
-                        <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                        <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="https://www.thaicatering.com" /></xsl:attribute>
+                        <xsl:attribute name="target">_blank</xsl:attribute>
                         <xsl:element name="img">
                             <xsl:attribute name="id">catering-logo</xsl:attribute>
-                            <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                            <xsl:attribute name="src"><xsl:value-of select="catering_logo" /></xsl:attribute>
                         </xsl:element>
                     </xsl:element>
                 </div>

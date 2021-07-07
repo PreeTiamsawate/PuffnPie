@@ -8,26 +8,26 @@
 
         <nav id="mobileNavbar" class=" container-fluid  d-block d-md-none fixed-bottom px-0 ">
             <div class="w-100 h-100 row justify-content-evenly mx-0 ">
-                <xsl:for-each select="######">  
+                <xsl:for-each select="header_menu">  
                     <xsl:element name="a">
                         <xsl:attribute name="class">col-2 px-0 mobile-link</xsl:attribute>
-                        <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                        <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
+                        <xsl:attribute name="href"><xsl:value-of select="menu_link" /></xsl:attribute>
+                        <xsl:attribute name="target"><xsl:value-of select="target_link" /></xsl:attribute>
                         <xsl:element name="img">
                             <xsl:attribute name="class">imgIcon d-block mx-auto</xsl:attribute>
-                            <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                            <xsl:attribute name="src"><xsl:value-of select="image" /></xsl:attribute>
                         </xsl:element>
                         <xsl:element name="img">
                             <xsl:attribute name="class">imgIcon d-none mx-auto</xsl:attribute>
-                            <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                            <xsl:attribute name="src"><xsl:value-of select="image_active" /></xsl:attribute>
                         </xsl:element>
                         <xsl:element name="img">
                             <xsl:attribute name="class">imgIcon d-none mx-auto</xsl:attribute>
-                            <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                            <xsl:attribute name="src"><xsl:value-of select="image_focus" /></xsl:attribute>
                         </xsl:element>
                         <xsl:element name="div">
                             <xsl:attribute name="class">textIcon w-100</xsl:attribute>
-                            <xsl:value-of select="######" />
+                            <xsl:value-of select="menu_name" />
                         </xsl:element>
                     </xsl:element>    
                 </xsl:for-each>  

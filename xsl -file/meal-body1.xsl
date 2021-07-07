@@ -6,7 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <xsl:for-each select="######">
+        <xsl:for-each select="body_content_container">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
@@ -18,13 +18,13 @@
                                 <div class="position-relative w-50 h-auto mt-5">
                                     <xsl:element name="img">
                                         <xsl:attribute name="src">
-                                            <xsl:value-of select="######" />
+                                            <xsl:value-of select="image1" />
                                         </xsl:attribute>
                                         <xsl:attribute name="class">pic-sm</xsl:attribute>
                                     </xsl:element>
                                     <xsl:element name="img">
                                         <xsl:attribute name="src">
-                                            <xsl:value-of select="######" />
+                                            <xsl:value-of select="image2" />
                                         </xsl:attribute>
                                         <xsl:attribute name="class">position-absolute top-50 start-50 pic-lg</xsl:attribute>
                                     </xsl:element>
@@ -32,28 +32,28 @@
                             </div>
                             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                                 <div class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
                                 </div>
                                 <div class="bar-dark d-md-block d-none"></div>
                                 <div class="detailEng my-md-4 my-2  d-lg-block d-none">
-                                   <xsl:value-of select="######" disable-output-escaping="yes" />
+                                   <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
                                 <div class="deatailThai  d-lg-block d-none">
-                                   <xsl:value-of select="######" disable-output-escaping="yes" />
+                                   <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                                 </div>
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
                                 </h2>
                                 <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
                                 <div id="appetizerBox" class="d-flex flex-row overflow-auto scroll-box-short my-md-5 my-2 ">
-                                    <xsl:for-each select="######">
+                                    <xsl:for-each select="product_image_container">
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                                             <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
-                                                    <xsl:value-of select="######" />
+                                                    <xsl:value-of select="menu_image" />
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">d-block card-img-small</xsl:attribute>
                                             </xsl:element>
@@ -61,28 +61,28 @@
                                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
                                                 <xsl:element name="p">
                                                     <xsl:attribute name="class">card-name-small pb-1</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-name-thai-small float-start</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                             </xsl:element>
                                         </xsl:element>
                                     </xsl:for-each>
@@ -92,12 +92,12 @@
                                         btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none
                                     </xsl:attribute>
 									<xsl:attribute name="target">
-										<xsl:value-of select="######" />
+										<xsl:value-of select="target_link" />
 									</xsl:attribute>
 									<xsl:attribute name="href">
-										<xsl:value-of select="######" />
+										<xsl:value-of select="button_link" />
 									</xsl:attribute>
-									<xsl:value-of select="######" />
+									<xsl:value-of select="button_text" />
 								</xsl:element>
                             </div>
                         </div>
@@ -108,29 +108,29 @@
                         <div class="container mx-auto row">
                             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                                 <div class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
                                 </div>
                                 <div class="bar-dark ms-md-auto d-md-block d-none "></div>
                                 <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
                                 <div class="deatailThai text-end  d-lg-block d-none ">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                                 </div>
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
-                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                    <xsl:value-of select="slider_topic" disable-output-escaping="yes" />>
                                 </h2>
                                 <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
                                 <div id="mainCourseBox"
                                     class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-4  float-md-end ">
-                                    <xsl:for-each select="######">
+                                    <xsl:for-each select="product_image_container">
                                         <xsl:element name="div">
                                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                                             <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
-                                                    <xsl:value-of select="######" />
+                                                    <xsl:value-of select="menu_image" />
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">d-block card-img-small</xsl:attribute>
                                             </xsl:element>
@@ -138,28 +138,28 @@
                                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
                                                 <xsl:element name="p">
                                                     <xsl:attribute name="class">card-name-small pb-1</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-name-thai-small float-start</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
-                                                <xsl:value-of select="######" disable-output-escaping="yes" />
+                                                <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                             </xsl:element>
                                         </xsl:element>
                                     </xsl:for-each>
@@ -169,26 +169,26 @@
                                         btn btn-primary btn-lg rounded-pill grabMe-btn d-md-block d-none float-md-end
                                     </xsl:attribute>
 									<xsl:attribute name="target">
-										<xsl:value-of select="######" />
+										<xsl:value-of select="target_link" />
 									</xsl:attribute>
 									<xsl:attribute name="href">
-										<xsl:value-of select="######" />
+										<xsl:value-of select="button_link" />
 									</xsl:attribute>
-									<xsl:value-of select="######" />
+									<xsl:value-of select="button_text" />
 								</xsl:element>
                             </div>
                             <div class="col-md-6 col-0 d-md-block d-none ">
                                 <div class="position-relative w-50 h-auto mt-3 ms-5 ps-5">
                                     <xsl:element name="img">
                                                 <xsl:attribute name="src">
-                                                    <xsl:value-of select="######" />
+                                                    <xsl:value-of select="image1" />
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">position-absolute top-50 start-50 pic-lg</xsl:attribute>
                                                 <xsl:attribute name="style">object-fit: cover;</xsl:attribute>
                                             </xsl:element>
                                             <xsl:element name="img">
                                                 <xsl:attribute name="src">
-                                                    <xsl:value-of select="######" />
+                                                   <xsl:value-of select="image2" />
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">pic-sm</xsl:attribute>
                                     </xsl:element>

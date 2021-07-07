@@ -10,20 +10,20 @@
             <xsl:attribute name="id">sectionThree</xsl:attribute>
             <xsl:attribute name="class">v41_32 d-flex flex-column justify-content-center align-items-center</xsl:attribute>
             <xsl:attribute name="style">
-            background: url(<xsl:value-of select="######" />);
+            background: url(<xsl:value-of select="footer_image" />);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             </xsl:attribute>
             <xsl:element name="div">
                 <xsl:attribute name="id">letsMeetUs</xsl:attribute>
-                <xsl:value-of select="######" disable-output-escaping="yes" />
+                <xsl:value-of select="footer_text" disable-output-escaping="yes" />
             </xsl:element>
             <xsl:element name="a">
                 <xsl:attribute name="class">btn btn-primary btn-lg rounded-pill visitShops-btn</xsl:attribute>
-                <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
-                <xsl:value-of select="######" />
+                <xsl:attribute name="href"><xsl:value-of select="button_link" /></xsl:attribute>
+                <xsl:attribute name="target"><xsl:value-of select="target_link" /></xsl:attribute>
+                <xsl:value-of select="button_text" />
             </xsl:element>
         </xsl:element>
 
@@ -36,23 +36,34 @@
                         <div class="bar-light mx-auto mb-3"></div>
                     </div>
                     <div class="d-flex justify-content-between w-50 ">
-                        <xsl:for-each select="######">
+                        <xsl:for-each select="social_link">
                             <xsl:element name="a">
-                                <xsl:attribute name="href"><xsl:value-of select="######" /></xsl:attribute>
-                                <xsl:attribute name="target"><xsl:value-of select="######" /></xsl:attribute>
+                                <xsl:attribute name="href"><xsl:value-of select="social_link" /></xsl:attribute>
+                                <xsl:attribute name="target">_blank</xsl:attribute>
                                 <xsl:element name="img">
                                     <xsl:attribute name="class">social-icon</xsl:attribute>
-                                    <xsl:attribute name="src"><xsl:value-of select="######" /></xsl:attribute>
+                                    <xsl:attribute name="src"><xsl:value-of select="social_icon" /></xsl:attribute>
                                 </xsl:element>
                             </xsl:element>
                         </xsl:for-each>
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex flex-wrap justify-content-between ">
-                    <xsl:for-each select="######">
+                    <xsl:for-each select="contact">
                         <xsl:element name="div">
                             <xsl:attribute name="class">h-auto  contacts contactDetail pt-4</xsl:attribute>
-                            <xsl:value-of select="######" disable-output-escaping="yes" />
+                            <xsl:element name="p">
+                                <xsl:element name="b">
+                                    <xsl:value-of select="contact_title" disable-output-escaping="yes" />
+                                </xsl:element>
+                            </xsl:element>
+                            <xsl:element name="p">
+                                <xsl:element name="b">Tel :</xsl:element><xsl:value-of select="contact_tel" disable-output-escaping="yes" />
+                                <xsl:element name="br"></xsl:element>
+                                <xsl:element name="b">Email :</xsl:element><xsl:value-of select="contact_email" disable-output-escaping="yes" />
+                                <xsl:element name="br"></xsl:element>
+                                <xsl:element name="b">Address :<xsl:value-of select="contact_address" disable-output-escaping="yes" />
+                            </xsl:element>
                         </xsl:element>
                     </xsl:for-each>
 

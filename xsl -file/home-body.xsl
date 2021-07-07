@@ -13,7 +13,7 @@
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header-mobile</xsl:attribute>
                         <xsl:attribute name="class">mt-2 mb-2</xsl:attribute>
-                        <xsl:value-of select="######" disable-output-escaping="yes" />
+                        <xsl:value-of select="header_text_mobile" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-light-mobile"></div>
@@ -22,7 +22,7 @@
                 <div class="col-md-6 col-lg-4 d-none d-md-inline-block contentTwo">
                     <xsl:element name="h2">
                         <xsl:attribute name="id">body-header</xsl:attribute>
-                        <xsl:value-of select="######" disable-output-escaping="yes" />
+                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
                     </xsl:element>
                    
                     <div class="bar-dark ms-lg-3 ms-0"></div>
@@ -30,62 +30,86 @@
                     <xsl:element name="div">
                         <xsl:attribute name="id">body-paragraph</xsl:attribute>
                         <xsl:attribute name="class">pe-md-5 pe-lg-1</xsl:attribute>
-                        <xsl:value-of select="######" disable-output-escaping="yes" />
+                        <xsl:value-of select="content_text" disable-output-escaping="yes" />
                     </xsl:element>
 
                      <xsl:element name="a">
                         <xsl:attribute name="class">btn btn-primary btn-lg rounded-pill grabMe-btn</xsl:attribute>
                         <xsl:attribute name="target">
-                            <xsl:value-of select="######" />
+                            <xsl:value-of select="target_link" />
                         </xsl:attribute>
                         <xsl:attribute name="href">
-                            <xsl:value-of select="######" />
+                            <xsl:value-of select="button_link" />
                         </xsl:attribute>
-                        <xsl:value-of select="######" />
+                        <xsl:value-of select="button_text" />
                     </xsl:element>
                 </div>
                 <div
                     class="col-md-3 col-lg-4 col-6 ps-0 pe-1 px-md-auto contentTwo d-flex flex-column align-items-end justify-content-md-start justify-content-end ">
-                    <xsl:for-each select="######">
+                    
                         <xsl:element name="a">
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:value-of select="######" />
-                            </xsl:attribute>
+                            
                             <xsl:attribute name="href">
-                                <xsl:value-of select="######" />
+                                <xsl:value-of select="image1_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="######" />
+                                    <xsl:value-of select="image1" />
                                 </xsl:attribute>
                                 <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
-                    </xsl:for-each>
+
+
+                        <xsl:element name="a">
+                            <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                            
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="image2_link" />
+                            </xsl:attribute>
+                            <xsl:element name="img">
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="image2" />
+                                </xsl:attribute>
+                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                            </xsl:element>
+                        </xsl:element>
+                   
                    
 
 
                 </div>
                 <div
                     class="col-md-3 col-lg-4 col-6 pe-0 ps-1 px-md-auto contentTwo d-flex flex-column align-items-start justify-content-md-end justify-content-start">
-                    <xsl:for-each select="######">
+                    
                         <xsl:element name="a">
                             <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:value-of select="######" />
-                            </xsl:attribute>
+                            
                             <xsl:attribute name="href">
-                                <xsl:value-of select="######" />
+                                <xsl:value-of select="image3_link" />
                             </xsl:attribute>
                             <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="######" />
+                                    <xsl:value-of select="image3" />
                                 </xsl:attribute>
                                 <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
                             </xsl:element>
                         </xsl:element>
-                    </xsl:for-each>
+                        <xsl:element name="a">
+                            <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                            
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="image4_link" />
+                            </xsl:attribute>
+                            <xsl:element name="img">
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="image4" />
+                                </xsl:attribute>
+                                <xsl:attribute name="class">foodLink my-1 my-md-3</xsl:attribute>
+                            </xsl:element>
+                        </xsl:element>
+                    
                    
 
                 </div>
