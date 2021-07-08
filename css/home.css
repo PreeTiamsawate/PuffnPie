@@ -189,10 +189,7 @@ body {
 #sectionTwo {
   width: 100%;
   height: 1300px;
-  background: url("../images/v41_27.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-color: #f4eae0;
   opacity: 1;
   /* position: absolute;
   top: 768px;
@@ -600,9 +597,12 @@ a:active {
 
 @media (max-width: 767px) {
   #sectionTwo {
-    background: linear-gradient(180deg, #3d2211 0%, rgba(153, 90, 19, 0) 60.42%),
-      url(../images/image-mobile/Taste-of-Passion-Background.jpg);
-    background-size: cover;
+    background: linear-gradient(
+      180deg,
+      #3d2211 0%,
+      rgba(153, 90, 19, 0) 60.42%
+    );
+    background-color: #f4eae0;
     width: 100%;
     height: 650px;
   }
