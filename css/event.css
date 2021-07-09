@@ -213,7 +213,7 @@ body {
   overflow: hidden;
 }
 .event-text-white {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 18px;
@@ -273,7 +273,7 @@ body {
   overflow: hidden;
 }
 .event-text-dark {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 18px;

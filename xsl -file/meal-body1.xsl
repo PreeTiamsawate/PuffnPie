@@ -38,9 +38,9 @@
                                 <div class="detailEng my-md-4 my-2  d-lg-block d-none">
                                    <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
-                                <div class="deatailThai  d-lg-block d-none">
+                                <!-- <div class="deatailThai  d-lg-block d-none">
                                    <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                                </div>
+                                </div> -->
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
                                     <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
                                 </h2>
@@ -114,9 +114,9 @@
                                 <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">
                                     <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
-                                <div class="deatailThai text-end  d-lg-block d-none ">
+                                <!-- <div class="deatailThai text-end  d-lg-block d-none ">
                                     <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                                </div>
+                                </div> -->
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
                                     <xsl:value-of select="slider_topic" disable-output-escaping="yes" />>
                                 </h2>

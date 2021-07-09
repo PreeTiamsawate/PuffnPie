@@ -38,9 +38,9 @@
                                 <div class="detailEng my-md-4 my-2 d-lg-block d-none">
                                     <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
-                                <div class="deatailThai d-lg-block d-none">
+                                <!-- <div class="deatailThai d-lg-block d-none">
                                    <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                                </div>
+                                </div> -->
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
                                     <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
                                 </h2>
@@ -114,9 +114,9 @@
                                 <div class="detailEng my-md-4 my-2 text-end d-lg-block d-none ">
                                    <xsl:value-of select="content_text" disable-output-escaping="yes" />
                                 </div>
-                                <div class="deatailThai text-end d-lg-block d-none ">
+                                <!-- <div class="deatailThai text-end d-lg-block d-none ">
                                   <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                                </div>
+                                </div> -->
                                 <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">
                                     <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
                                 </h2>
@@ -222,65 +222,3 @@
 </xsl:template>
 </xsl:stylesheet> 
 
-<!--Original HTML============================================================ -->
-<section class="sectionBakery   py-md-5 py-2 w-100 h-auto">
-    <div class="container mx-auto row">
-
-        <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-            <div class="quoteDark mt-md-4 mb-lg-5 my-2 text-end d-md-block d-none ">"Our Original
-                <br>Bakery to be Served"
-            </div>
-            <div class="bar-dark ms-md-auto d-md-block d-none "></div>
-            <div class="detailEng my-md-4 my-2 text-end d-lg-block d-none ">We started our journey with "Chicken
-                Roll" since 1997,
-                <br>with the passion od pastry chef to create authentic pastry bakeries.
-
-            </div>
-            <div class="deatailThai text-end d-lg-block d-none ">
-                จุดเริ่มต้นของพัฟแอนด์พายเกิดจากเมนู "ชิ้กเก้นโรล" ตั้งแต่ปี 2540
-                <br>ซึ่งสร้างความประทับใจแก่ลูกค้าจนถึงปัจจุบัน เราจึงอยากให้ท่านได้ลอง
-            </div>
-            <h2 class="menu-header-mobile-dark d-block d-md-none mb-1 ms-2">Pastries</h2>
-            <div class="bar-dark-mobile  d-block d-md-none ms-2"></div>
-            <div id="orignalBox"
-                class="d-flex flex-row overflow-auto scroll-box-short scroll-end my-lg-5 my-3 float-md-end ">
-
-                <div class="card-small flex-shrink-0 mx-2" data-bs-toggle="modal" data-bs-target="#modal-product">
-                    <img src="./images/v41_21.png" alt="image not available" class="d-block card-img-small">
-                    <div class="card-text w-100 h-auto pt-1 ps-1">
-                        <p class="card-name-small mb-md-1">Test<br>Croissant</p>
-                        <span class="card-name-thai-small text-wrap float-start">ครัวซองค์รสต้นตำหรับ</span>
-                        <span class="card-price-small float-end">45,-</span>
-                    </div>
-                    <div class="ingredient d-none">
-                        PumpkinsTest,<br>
-                        MilkTest, <br>
-                        ButterTest, <br>
-                        WhipcreamTest</div>
-                    <div class="productDescription d-none">
-                        Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
-                        Now, let’s grab this and enjoy more good to both your health and joy.
-                    </div>
-                    <div class="preservation d-none">
-                        2 Days Storage <br>
-                        Cold and Dry Places
-                    </div>
-                </div>
-
-            </div>
-            <button type="button"
-                class="btn btn-primary  rounded-pill grabMe-btn d-md-block d-none float-md-end">Grab Me!</button>
-
-        </div>
-        <div class="col-md-6 col-0 d-md-block d-none  ">
-            <div class="position-relative w-50 h-auto mt-0 mt-lg-5 ms-5 ps-5">
-                <img src="./images/v205_730.png" class="position-absolute top-50 start-50 pic-lg" alt=""
-                    style="object-fit: cover;">
-                <img src="./images/v205_729.png " class=" pic-sm " alt="">
-
-            </div>
-
-        </div>
-
-    </div>
-</section>

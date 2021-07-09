@@ -272,7 +272,7 @@ border: 1px solid red;
   overflow: hidden;
 }
 .detailEng {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 20px;
@@ -395,9 +395,9 @@ border: 1px solid red;
 }
 
 /* Section four======================================= */
-.section-dark {
+/* .section-dark {
   background-color: #000000;
-}
+} */
 .quoteWhite {
   font-family: "Avenir LT Std", sans-serif;
   font-style: normal;
@@ -409,7 +409,7 @@ border: 1px solid red;
   flex-grow: 0;
 }
 .detailEng-white {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 25px;

@@ -268,7 +268,7 @@ body {
   overflow: hidden;
 }
 .detailEng {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 20px;
@@ -394,9 +394,9 @@ body {
 }
 
 /* Section four======================================= */
-.section-brown {
+/* .section-brown {
   background-color: #3d2211;
-}
+} */
 .quoteWhite {
   font-family: "Avenir LT Std", sans-serif;
   font-style: normal;
@@ -408,7 +408,7 @@ body {
   flex-grow: 0;
 }
 .detailEng-white {
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Avenir LT Std", "prompt", sans-serif;
   font-style: normal;
   font-weight: 350;
   font-size: 25px;

@@ -6,7 +6,7 @@
 	<xsl:include href="http://www.interwoven.com/livesite/xsl/StringTemplates.xsl" />
 	<xsl:template match="/">
 
-        <xsl:for-each select="######">
+        <xsl:for-each select="event_list">
             <xsl:variable name="position">
                 <xsl:value-of select="position()" />
             </xsl:variable>
@@ -17,27 +17,27 @@
                             <div class="col-8 p-0 ">
                                 <xsl:element name="img">
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="######" />
+                                        <xsl:value-of select="event_image" />
                                     </xsl:attribute>
                                     <xsl:attribute name="class">event-img-tall</xsl:attribute>
                                 </xsl:element>
                             </div>
                             <div class="event-textbox-dark px-md-5 h-100 col-4 d-flex flex-column justify-content-evenly">
                                 <h2 class="event-name-white">
-                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                    <xsl:value-of select="event_title" disable-output-escaping="yes" />
                                 </h2>
                                 <div class="bar-light-long "></div>
 
                                 <p class="event-text-white d-none d-md-block">
-                                   <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                   <xsl:value-of select="event_detail" disable-output-escaping="yes" />
                                 </p>
-                                <p class="event-text-white-thai d-none d-md-block">
+                                <!-- <p class="event-text-white-thai d-none d-md-block">
                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
-                                </p>
+                                </p> -->
                                 <div class="date-box d-flex justify-content-around align-items-center ">
                                     <div class="date-bar"></div>
                                     <div class="date ">
-                                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                        <xsl:value-of select="event_date" disable-output-escaping="yes" />
                                     </div>
                                     <img class="event-pin " src="./images/placeholder.png" alt="">
                                 </div>
@@ -51,20 +51,20 @@
                         <div class="row h-100">
                             <div class="event-textbox-white px-md-5 h-100 col-4 d-flex flex-column justify-content-evenly">
                                 <h2 class="event-name-dark">
-                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                    <xsl:value-of select="event_title" disable-output-escaping="yes" />
                                 </h2>
                                 <div class="bar-dark-long  "></div>
 
                                 <p class="event-text-dark d-none d-md-block">
-                                    <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                    <xsl:value-of select="event_detail" disable-output-escaping="yes" />
                                 </p>
-                                <p class="event-text-dark-thai d-none d-md-block">
+                                <!-- <p class="event-text-dark-thai d-none d-md-block">
                                     <xsl:value-of select="header_text" disable-output-escaping="yes" />
-                                </p>
+                                </p> -->
                                 <div class="date-box d-flex justify-content-around align-items-center ">
                                     <div class="date-bar"></div>
                                     <div class="date ">
-                                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                                        <xsl:value-of select="event_date" disable-output-escaping="yes" />
                                     </div>
                                     <img class="event-pin  " src="./images/placeholder.png" alt="">
 
@@ -74,7 +74,7 @@
                             <div class="col-8 p-0 h-100">
                                 <xsl:element name="img">
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="######" />
+                                        <xsl:value-of select="event_image" />
                                     </xsl:attribute>
                                     <xsl:attribute name="class">event-img-tall</xsl:attribute>
                                 </xsl:element>

@@ -37,24 +37,28 @@
         </xsl:element>
 
         <!-- Brown Sections=================================================================== -->
-        <section class="section-brown w-100  py-lg-5 py-md-3 py-2 h-auto d-flex flex-column ">
+        ำ<xsl:element name="section">
+            <xsl:attribute name="class">section-brown w-100  py-lg-5 py-md-3 py-2 h-auto d-flex flex-column</xsl:attribute>
+            <xsl:attribute name="style">
+                background-color:<xsl:value-of select="bg_color" /> ;
+            </xsl:attribute>
             <div class="quoteWhite text-center my-lg-4 my-2 d-md-block d-none">
-                <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                <xsl:value-of select="top_header_text" disable-output-escaping="yes" />
             </div>
             <div class="bar-light-long mx-auto my-lg-4 my-2 d-md-block d-none"></div>
             <div class="detailEng-white text-center my-lg-4 my-2 d-lg-block d-none">
-                <xsl:value-of select="content" disable-output-escaping="yes" />
+                <xsl:value-of select="top_detail_text" disable-output-escaping="yes" />
             </div>
-            <div class="deatailThai-white text-center my-md-4 my-2 d-lg-block d-none">
+            <!-- <div class="deatailThai-white text-center my-md-4 my-2 d-lg-block d-none">
                <xsl:value-of select="content_th" disable-output-escaping="yes" />
-            </div>
+            </div> -->
             <div class="container mx-auto ps-3 ps-lg-5 pt-3">
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                    <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
+                    <xsl:value-of select="top_slider_topic" disable-output-escaping="yes" />
                 </h2>
                 <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                 <div id="snackBox" class="d-flex flex-row overflow-auto scroll-box my-lg-4 my-2 ms-md-5 ms-auto ">
-                    <xsl:for-each select="product_image_container">
+                    <xsl:for-each select="top_product_container">
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -129,21 +133,21 @@
                 </div>
                 <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                     <div class="quoteWhite  my-lg-5 my-3  d-md-block d-none">
-                       <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                       <xsl:value-of select="main_header_text" disable-output-escaping="yes" />
                     </div>
                     <div class="bar-light-long  d-md-block d-none"></div>
                     <div class="detailEng-white my-md-4 my-2  d-lg-block d-none">
-                        <xsl:value-of select="content_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="main๘detail_text" disable-output-escaping="yes" />
                     </div>
-                    <div class="deatailThai-white  d-lg-block d-none">
+                    <!-- <div class="deatailThai-white  d-lg-block d-none">
                         <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                    </div>
+                    </div> -->
                     <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                        <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
+                        <xsl:value-of select="main_slider_topic" disable-output-escaping="yes" />
                     </h2>
                     <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                     <div id="sweetyBox" class="d-flex flex-row overflow-auto scroll-box-short my-lg-5 my-3 ">
-                        <xsl:for-each select="product_image_container">
+                        <xsl:for-each select="mian_product_container">
                             <xsl:element name="div">
                                 <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -200,15 +204,15 @@
             </div>
             <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
                 <div class="quoteWhite  mt-md-5 mb-md-3 ms-md-5 ms-auto d-md-block d-none">
-                   <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                   <xsl:value-of select="bottom_header_text" disable-output-escaping="yes" />
                 </div>
                 <div class="bar-light-long ms-md-5 ms-auto d-md-block d-none "></div>
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                   <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
+                   <xsl:value-of select="bottom_slider_topic" disable-output-escaping="yes" />
                 </h2>
                 <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                 <div id="complimentaryBox" class="d-flex flex-row overflow-auto scroll-box my-md-4 my-2 ms-md-5 ms-auto ">
-                    <xsl:for-each select="product_image_container">
+                    <xsl:for-each select="bottom_product_container">
                         <xsl:element name="div">
                             <xsl:attribute name="class">card-small flex-shrink-0 mx-2</xsl:attribute>
                             <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
@@ -262,7 +266,8 @@
                     <xsl:value-of select="button_text" />
                 </xsl:element>
             </div>
-        </section>
+        </xsl:element>
+        
 
         <!-- Modal Section -->
 

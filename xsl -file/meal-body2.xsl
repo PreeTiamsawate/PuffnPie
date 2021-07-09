@@ -37,20 +37,24 @@
         </xsl:element>
        
        <!-- Black Sections=================================================================== -->
-        <section class="section-dark w-100 py-lg-5 py-md-3 py-2  h-auto d-flex flex-column ">
+       <xsl:element name="section">
+            <xsl:attribute name="class">section-dark w-100 py-lg-5 py-md-3 py-2  h-auto d-flex flex-column</xsl:attribute>
+            <xsl:attribute name="style">
+                background-color:<xsl:value-of select="bg_color" /> ;
+            </xsl:attribute>
             <div class="quoteWhite text-center my-lg-4 my-2  d-md-block d-none">
-                <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                <xsl:value-of select="top_header_text" disable-output-escaping="yes" />
             </div>
             <div class="bar-light-long mx-auto my-lg-4 my-2  d-md-block d-none"></div>
             <div class="detailEng-white text-center my-md-4 my-2  d-lg-block d-none">
-                <xsl:value-of select="content" disable-output-escaping="yes" />
+                <xsl:value-of select="top_detail_text" disable-output-escaping="yes" />
             </div>
-            <div class="deatailThai-white text-center my-md-4 my-2   d-lg-block d-none">
+            <!-- <div class="deatailThai-white text-center my-md-4 my-2   d-lg-block d-none">
                 <xsl:value-of select="content_th" disable-output-escaping="yes" />
-            </div>
+            </div> -->
             <div class="container mx-auto ps-3 ps-lg-5 pt-2">
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                   <xsl:value-of select="slider_topic" disable-output-escaping="yes" /
+                   <xsl:value-of select="top_slider_topic" disable-output-escaping="yes" /
                 </h2>
                 <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                 <div id="westernBox" class="d-flex flex-row overflow-auto scroll-box my-lg-4 my-2 ms-md-5 ms-auto ">
@@ -129,17 +133,17 @@
                 </div>
                 <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
                     <div class="quoteWhite mb-3  d-md-block d-none">
-                        <xsl:value-of select="header_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="main_header_text" disable-output-escaping="yes" />
                     </div>
                     <div class="bar-light-long d-md-block d-none"></div>
                     <div class="detailEng-white my-md-4 my-2  d-lg-block d-none">
-                        <xsl:value-of select="content_text" disable-output-escaping="yes" />
+                        <xsl:value-of select="main_detail_text" disable-output-escaping="yes" />
                     </div>
-                    <div class="deatailThai-white  d-lg-block d-none">
+                    <!-- <div class="deatailThai-white  d-lg-block d-none">
                         <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
-                    </div>
+                    </div> -->
                     <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
-                        <xsl:value-of select="slider_topic" disable-output-escaping="yes" />
+                        <xsl:value-of select="main_slider_topic" disable-output-escaping="yes" />
                     </h2>
                     <div class="bar-white-mobile  d-block d-md-none ms-2"></div>
                     <div id="saladBox" class="d-flex flex-row overflow-auto scroll-box-short my-md-5 my-2 ">
@@ -199,7 +203,8 @@
                 </div>
             </div>
             <div class="bar-light-long mx-auto d-lg-block d-none my-md-5 my-2"></div>
-        </section>
+       </xsl:element>
+       
         <!-- modal Section -->
         <div class="modal fade" id="modal-product" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
