@@ -295,7 +295,7 @@ border: 1px solid red;
   flex-grow: 0;
 }
 .scroll-box-short {
-  width: 50vw;
+  width: 125%;
   /* min-width: 300px; */
   height: auto;
   /* border: 1px solid black; */
@@ -429,7 +429,7 @@ border: 1px solid red;
   flex-grow: 0;
 }
 .scroll-box {
-  width: 90vw;
+  width: 105%;
   /* min-width: 400px; */
   height: auto;
   /* margin-left: auto; */
@@ -636,6 +636,12 @@ b {
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
+  }
+  .scroll-box-short {
+    width: 98%;
+  }
+  .scroll-box {
+    width: 115%;
   }
   .bar-dark-sm {
     width: 90.3px;

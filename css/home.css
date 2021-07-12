@@ -138,7 +138,7 @@ body {
   font-size: 72px;
   opacity: 1;
   text-align: left;
-  margin-top: 200px;
+  margin-top: 160px;
 }
 #weGetYou {
   width: 302px;
@@ -551,7 +551,7 @@ a:active {
   /* margin-left: 106px; */
 }
 #promotion-scroll {
-  width: 105%;
+  width: 103%;
   min-width: 300px;
   -ms-overflow-style: none;
 }
@@ -574,7 +574,7 @@ a:active {
   height: 200px;
   font-family: "Avenir LT Std", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 27.65px;
   line-height: 33px;
   color: #ebedec;

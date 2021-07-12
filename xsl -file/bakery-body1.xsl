@@ -69,7 +69,7 @@
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="div">
@@ -146,7 +146,7 @@
                                                 </xsl:element>
                                                 <xsl:element name="span">
                                                     <xsl:attribute name="class">card-price-small float-end</xsl:attribute>
-                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
+                                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
                                                 </xsl:element>
                                             </xsl:element>
                                             <xsl:element name="div">

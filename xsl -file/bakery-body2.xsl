@@ -81,7 +81,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
+                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
@@ -170,7 +170,7 @@
                                     </xsl:element>
                                     <xsl:element name="span">
                                         <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                        <xsl:value-of select="menu_price" disable-output-escaping="yes" />
+                                        <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
                                     </xsl:element>
                                 </xsl:element>
                                 <xsl:element name="div">
@@ -235,7 +235,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
+                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
@@ -277,11 +277,11 @@
                     <div class="modal-img-contaniner position-relative mx-md-5 mt-md-3">
                         <img src="" alt="" class="modal-img ">
                         <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
-                            <h2 class="modal-name mb-0">
+                            <h2 class="modal-name mb-0 mt-3 d-inline-block">
                                 <!-- Test<br>Croissant -->
                             </h2>
 
-                            <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal   float-end">Grab
+                            <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal  d-inline-block mt-5 float-end">Grab
                                 Me!</button>
                         </div>
                         <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
