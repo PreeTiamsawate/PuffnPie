@@ -176,7 +176,7 @@ body {
 }
 
 .location-pin {
-  width: 20px;
+  width: 12px;
   height: 19.26px;
 
   filter: drop-shadow(1.6051px 1.6051px 3.21019px rgba(0, 0, 0, 0.5));

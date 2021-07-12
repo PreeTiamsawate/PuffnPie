@@ -81,7 +81,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
+                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
@@ -170,7 +170,7 @@
                                     </xsl:element>
                                     <xsl:element name="span">
                                         <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                        <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
+                                        <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                     </xsl:element>
                                 </xsl:element>
                                 <xsl:element name="div">
@@ -235,7 +235,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">card-price-small-white float-end</xsl:attribute>
-                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />,-
+                                    <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="div">
@@ -300,7 +300,7 @@
                         </div>
                     </div>
                     <div class="time-preserve mx-auto py-2 text-center">
-                        <img src="./images/image-mobile/Clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                        <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
                         <p class="modal-preservation d-inline-block pt-0 my-0 ps-2">
                             <!-- 2 Days Storage <br>
                         Cold and Dry Places -->

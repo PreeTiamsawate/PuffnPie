@@ -41,8 +41,9 @@
                 <xsl:value-of select="bottom_header_text" disable-output-escaping="yes" />
             </h1>
             <div class="bar-dark  my-1 my-lg-4 my-md-3"></div>
-            <!-- Need to add img here -->
+            
             <xsl:element name="img">
+             <xsl:attribute name="class">d-block mx-5 w-100</xsl:attribute>   
              <xsl:attribute name="src"><xsl:value-of select="bottom_image" /></xsl:attribute>
             </xsl:element>
 
@@ -93,7 +94,7 @@
                         </div>
                     </div>
                     <div class="time-preserve mx-auto py-2 text-center">
-                        <img src="./images/image-mobile/Clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                        <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
                         <p class="modal-preservation d-inline-block pt-0 my-0 ps-2">
                             <!-- 2 Days Storage <br>
                         Cold and Dry Places -->

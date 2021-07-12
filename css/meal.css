@@ -208,7 +208,7 @@ border: 1px solid red;
   font-size: 22.9408px;
   line-height: 28px;
   color: #000000;
-  margin-bottom: 6.54px;
+  margin-bottom: 0px;
 }
 .card-name-thai-big {
   font-family: "prompt", sans-serif;
@@ -638,10 +638,10 @@ b {
     font-weight: 400;
   }
   .scroll-box-short {
-    width: 98%;
+    width: 115%;
   }
   .scroll-box {
-    width: 115%;
+    width: 98%;
   }
   .bar-dark-sm {
     width: 90.3px;

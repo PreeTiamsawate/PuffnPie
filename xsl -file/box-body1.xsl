@@ -16,7 +16,7 @@
                         <xsl:attribute name="class">container-fluid d-block d-md-none</xsl:attribute>
                         <xsl:attribute name="style">
                             background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
-                            url(<xsl:value-of select="banner_mobile_image" />);
+                            url(<xsl:value-of select="banner_mobile_image" />);background-size: cover;background-position: center;
                         </xsl:attribute>
                         <div class="row justify-content-end">
                             <div class="col-3 ps-0 pt-4 ">
@@ -146,7 +146,7 @@
                         <xsl:attribute name="class">container-fluid d-block d-md-none</xsl:attribute>
                         <xsl:attribute name="style">
                             background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 51.55%, #000000 84.72%),
-                            url(<xsl:value-of select="banner_mobile_image" />);
+                            url(<xsl:value-of select="banner_mobile_image" />);background-size: cover;background-position: center;
                         </xsl:attribute>
                         <div class="row justify-content-end">
                             <div class="col-3 ps-0 pt-4 ">

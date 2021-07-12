@@ -33,7 +33,7 @@
                         <div class="d-flex flex-row justify-content-between  hero-scroll  mt-3 h-auto">
                             <xsl:for-each select="hero_menu">
                                 <xsl:element name="div">
-                                    <xsl:attribute name="class">card-big flex-shrink-0 mx-1</xsl:attribute>
+                                    <xsl:attribute name="class">card-big flex-shrink-0 mx-2</xsl:attribute>
                                     <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                                     <xsl:attribute name="data-bs-target">#modal-product</xsl:attribute>
                                     <xsl:element name="img">

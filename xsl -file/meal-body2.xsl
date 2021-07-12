@@ -235,7 +235,7 @@
                         </div>
                     </div>
                     <div class="time-preserve mx-auto py-2 text-center">
-                        <img src="./images/image-mobile/Clock.png" alt="" class="clock-img mb-3 d-inline-block">
+                        <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">
                         <p class="preserve-detail modal-preservation d-inline-block pt-0 my-0 ps-2">
                             <!-- 2 Days Storage <br>
                         Cold and Dry Places -->

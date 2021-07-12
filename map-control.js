@@ -219,4 +219,42 @@ window.onload = showShopsByDistance();
 //     distance: 0,
 //     distanceInKm: "",
 //   },
+// {
+//     branchName: "Chulalongkprn Hospital",
+//     imgAddress: "#######",
+//     mapFrame:
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10962.323393505625!2d100.5360157322967!3d13.732575560475095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24d42cda27c0068f!2sPuff%20%26%20pie%20%7C%20Thai%20Airways%20Catering%20(Chula%20Hospital%20Branch)!5e0!3m2!1sen!2sth!4v1626113458787!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+//     latitude: 13.7311055,
+//     longitude: 100.5360083,
+//     distance: 0,
+//     distanceInKm: "",
+//   },{
+//     branchName: "Head Office Building 1 ",
+//     imgAddress: "###########",
+//     mapFrame:
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484.3203890595463!2d100.56111320125898!3d13.805190313412782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d4c6c443aed%3A0x5d5edb695fa14899!2z4Lit4Lij4LmI4Lit4Lii4Lil4LmJ4LiZ4Lif4LmJ4Liy4LivIOC4geC4suC4o-C4muC4tOC4meC5hOC4l-C4og!5e0!3m2!1sen!2sth!4v1626113721610!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+//     latitude: 13.8053221,
+//     longitude: 100.5611411,
+//     distance: 0,
+//     distanceInKm: "",
+//   },{
+//     branchName: "THAI Operation Control Center ",
+//     imgAddress: "#############",
+//     mapFrame:
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d969.0300466243938!2d100.7581333997674!3d13.711169911644543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d67a659011f55%3A0xd7b0712c92455215!2sTHAI%20Operation%20Control%20Centre!5e0!3m2!1sen!2sth!4v1626113928808!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+//     latitude: 13.7107499,
+//     longitude: 100.7586262,
+//     distance: 0,
+//     distanceInKm: "",
+//   },{
+//     branchName: "Rama Hospital ",
+//     imgAddress: "#############",
+//     mapFrame:
+//       '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.1702530508633!2d100.52578071468677!3d13.768604390336575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2994d66e9a1ed%3A0xed95040bdde77024!2sPuff%20%26%20Pie!5e0!3m2!1sen!2sth!4v1626114034718!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>',
+//     latitude: 13.7685124,
+//     longitude: 100.5282026,
+//     distance: 0,
+//     distanceInKm: "",
+//   },
+
 // ];

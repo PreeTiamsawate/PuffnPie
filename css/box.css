@@ -184,7 +184,7 @@ border: 1px solid red;
   color: #000000;
 }
 .scroll-box-short {
-  width: 50vw;
+  width: 125%;
   /* min-width: 300px; */
   height: auto;
   /* border: 1px solid black; */
@@ -596,6 +596,9 @@ b {
     font-weight: 350;
     font-size: 13px;
     line-height: 14px;
+  }
+  .scroll-box-short {
+    width: 115%;
   }
   .scroll-box-short::-webkit-scrollbar {
     display: none;
