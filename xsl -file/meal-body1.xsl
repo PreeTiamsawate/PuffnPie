@@ -31,13 +31,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-                                <div class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">
+                                <h2 class="quoteDark mt-md-4 mb-lg-5 my-3 d-md-block d-none">
                                     <xsl:value-of select="header_text" disable-output-escaping="yes" />
-                                </div>
+                                </h2>
                                 <div class="bar-dark d-md-block d-none"></div>
-                                <div class="detailEng my-md-4 my-2  d-lg-block d-none">
+                                <p class="detailEng my-md-4 my-2  d-lg-block d-none">
                                    <xsl:value-of select="content_text" disable-output-escaping="yes" />
-                                </div>
+                                </p>
                                 <!-- <div class="deatailThai  d-lg-block d-none">
                                    <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                                 </div> -->
@@ -59,11 +59,11 @@
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
-                                                <xsl:element name="p">
+                                                <xsl:element name="h4">
                                                     <xsl:attribute name="class">card-name-small pb-1</xsl:attribute>
                                                     <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                                 </xsl:element>
-                                                <xsl:element name="span">
+                                                <xsl:element name="h5">
                                                     <xsl:attribute name="class">card-name-thai-small float-start</xsl:attribute>
                                                     <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                                 </xsl:element>
@@ -72,15 +72,15 @@
                                                     <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                             </xsl:element>
@@ -107,13 +107,13 @@
                     <section class="sectionMeal py-md-5  py-2 w-100 h-auto">
                         <div class="container mx-auto row">
                             <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-                                <div class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">
+                                <h2 class="quoteDark mt-md-2 mb-lg-5 my-2 text-end d-md-block d-none ">
                                     <xsl:value-of select="header_text" disable-output-escaping="yes" />
-                                </div>
+                                </h2>
                                 <div class="bar-dark ms-md-auto d-md-block d-none "></div>
-                                <div class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">
+                                <p class="detailEng my-md-4 my-2 text-end  d-lg-block d-none ">
                                     <xsl:value-of select="content_text" disable-output-escaping="yes" />
-                                </div>
+                                </p>
                                 <!-- <div class="deatailThai text-end  d-lg-block d-none ">
                                     <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                                 </div> -->
@@ -136,11 +136,11 @@
                                             </xsl:element>
                                             <xsl:element name="div">
                                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
-                                                <xsl:element name="p">
+                                                <xsl:element name="h4">
                                                     <xsl:attribute name="class">card-name-small pb-1</xsl:attribute>
                                                     <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                                 </xsl:element>
-                                                <xsl:element name="span">
+                                                <xsl:element name="h5">
                                                     <xsl:attribute name="class">card-name-thai-small float-start</xsl:attribute>
                                                     <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                                 </xsl:element>
@@ -149,15 +149,15 @@
                                                     <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                                 </xsl:element>
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                             </xsl:element>
-                                            <xsl:element name="div">
+                                            <xsl:element name="p">
                                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                             </xsl:element>

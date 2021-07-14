@@ -27,7 +27,7 @@
                    
                     <div class="bar-dark ms-lg-3 ms-0"></div>
 
-                    <xsl:element name="div">
+                    <xsl:element name="p">
                         <xsl:attribute name="id">body-paragraph</xsl:attribute>
                         <xsl:attribute name="class">pe-md-5 pe-lg-1</xsl:attribute>
                         <xsl:value-of select="content_text" disable-output-escaping="yes" />

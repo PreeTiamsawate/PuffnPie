@@ -71,27 +71,28 @@
                     <div class="modal-img-contaniner position-relative mx-md-5 mt-md-3">
                         <img src="" alt="" class="modal-img ">
                         <div class=" modal-img-text w-100 h-auto position-absolute bottom-0 px-3 m-0 pb-3">
-                            <h2 class="modal-name mb-0">
+                            <h2 class="modal-name mb-0 mt-3 d-inline-block">
                                 <!-- Test<br>Croissant -->
                             </h2>
 
-                            <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal   float-end">Grab
+                            <button type="button"
+                                class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end">Grab
                                 Me!</button>
                         </div>
                         <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
                             data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="row w-100 h-auto modal-text mx-auto">
-                        <div class="col-5 modal-ingredient ps-2 ps-md-5 py-2">
+                        <p class="col-5 modal-ingredient ps-2 ps-md-5 py-2">
                             <!-- Pumpkins,<br>
                         Milk, <br> 
                         Butter, <br> 
                         Whipcream -->
-                        </div>
-                        <div class="col-7 modal-detail py-2">
+                        </p>
+                        <p class="col-7 modal-detail py-2">
                             <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
                         Now, let’s grab this and enjoy more good to both your health and joy. -->
-                        </div>
+                        </p>
                     </div>
                     <div class="time-preserve mx-auto py-2 text-center">
                         <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">

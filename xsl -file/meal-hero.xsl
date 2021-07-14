@@ -42,11 +42,11 @@
                                     </xsl:element>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">card-text w-100 h-auto pt-1</xsl:attribute>
-                                        <xsl:element name="p">
+                                        <xsl:element name="h4">
                                             <xsl:attribute name="class">card-name-big</xsl:attribute>
                                             <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                         </xsl:element>
-                                        <xsl:element name="span">
+                                        <xsl:element name="h5">
                                             <xsl:attribute name="class">card-name-thai-big</xsl:attribute>
                                             <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                         </xsl:element>
@@ -55,15 +55,15 @@
                                             <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                         </xsl:element>
                                     </xsl:element>
-                                    <xsl:element name="div">
+                                    <xsl:element name="p">
                                         <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                         <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                     </xsl:element>
-                                    <xsl:element name="div">
+                                    <xsl:element name="p">
                                         <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                         <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                     </xsl:element>
-                                    <xsl:element name="div">
+                                    <xsl:element name="p">
                                         <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                         <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                     </xsl:element>
@@ -107,15 +107,15 @@
                                     <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                 <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                 <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                             </xsl:element>

@@ -42,13 +42,13 @@
             <xsl:attribute name="style">
                 background-color:<xsl:value-of select="bg_color" /> ;
             </xsl:attribute>
-            <div class="quoteWhite text-center my-lg-4 my-2 d-md-block d-none">
+            <h2 class="quoteWhite text-center my-lg-4 my-2 d-md-block d-none">
                 <xsl:value-of select="top_header_text" disable-output-escaping="yes" />
-            </div>
+            </h2>
             <div class="bar-light-long mx-auto my-lg-4 my-2 d-md-block d-none"></div>
-            <div class="detailEng-white text-center my-lg-4 my-2 d-lg-block d-none">
+            <p class="detailEng-white text-center my-lg-4 my-2 d-lg-block d-none">
                 <xsl:value-of select="top_detail_text" disable-output-escaping="yes" />
-            </div>
+            </p>
             <!-- <div class="deatailThai-white text-center my-md-4 my-2 d-lg-block d-none">
                <xsl:value-of select="content_th" disable-output-escaping="yes" />
             </div> -->
@@ -71,11 +71,11 @@
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
-                                <xsl:element name="p">
+                                <xsl:element name="h4">
                                     <xsl:attribute name="class">card-name-small-white mb-md-1</xsl:attribute>
                                     <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                 </xsl:element>
-                                <xsl:element name="span">
+                                <xsl:element name="h5">
                                     <xsl:attribute name="class">card-name-thai-small-white text-wrap float-start</xsl:attribute>
                                     <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                 </xsl:element>
@@ -84,15 +84,15 @@
                                     <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                 <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                 <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                             </xsl:element>
@@ -132,13 +132,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12 px-0 px-md-2 overflow-visible">
-                    <div class="quoteWhite  my-lg-5 my-3  d-md-block d-none">
+                    <h2 class="quoteWhite  my-lg-5 my-3  d-md-block d-none">
                        <xsl:value-of select="main_header_text" disable-output-escaping="yes" />
-                    </div>
+                    </h2>
                     <div class="bar-light-long  d-md-block d-none"></div>
-                    <div class="detailEng-white my-md-4 my-2  d-lg-block d-none">
+                    <p class="detailEng-white my-md-4 my-2  d-lg-block d-none">
                         <xsl:value-of select="main๘detail_text" disable-output-escaping="yes" />
-                    </div>
+                    </p>
                     <!-- <div class="deatailThai-white  d-lg-block d-none">
                         <xsl:value-of select="content_text_th" disable-output-escaping="yes" />
                     </div> -->
@@ -160,11 +160,11 @@
                                 </xsl:element>
                                 <xsl:element name="div">
                                     <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
-                                    <xsl:element name="p">
+                                    <xsl:element name="h4">
                                         <xsl:attribute name="class">card-name-small-white mb-md-1</xsl:attribute>
                                         <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                     </xsl:element>
-                                    <xsl:element name="span">
+                                    <xsl:element name="h5">
                                         <xsl:attribute name="class">card-name-thai-small-white text-wrap float-start</xsl:attribute>
                                         <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                     </xsl:element>
@@ -173,15 +173,15 @@
                                         <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                     </xsl:element>
                                 </xsl:element>
-                                <xsl:element name="div">
+                                <xsl:element name="p">
                                     <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                     <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                                 </xsl:element>
-                                <xsl:element name="div">
+                                <xsl:element name="p">
                                     <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                     <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                                 </xsl:element>
-                                <xsl:element name="div">
+                                <xsl:element name="p">
                                     <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                     <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                                 </xsl:element>
@@ -203,9 +203,9 @@
                 </div>
             </div>
             <div class="container ps-lg-5 ps-3  pt-lg-3 pt-md-5">
-                <div class="quoteWhite  mt-md-5 mb-md-3 ms-md-5 ms-auto d-md-block d-none">
+                <h2 class="quoteWhite  mt-md-5 mb-md-3 ms-md-5 ms-auto d-md-block d-none">
                    <xsl:value-of select="bottom_header_text" disable-output-escaping="yes" />
-                </div>
+                </h2>
                 <div class="bar-light-long ms-md-5 ms-auto d-md-block d-none "></div>
                 <h2 class="menu-header-mobile-white d-block d-md-none mb-1 ms-2">
                    <xsl:value-of select="bottom_slider_topic" disable-output-escaping="yes" />
@@ -225,11 +225,11 @@
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">card-text w-100 h-auto pt-1 ps-1</xsl:attribute>
-                                <xsl:element name="p">
+                                <xsl:element name="h4">
                                     <xsl:attribute name="class">card-name-small-white mb-md-1</xsl:attribute>
                                     <xsl:value-of select="menu_name" disable-output-escaping="yes" />
                                 </xsl:element>
-                                <xsl:element name="span">
+                                <xsl:element name="h5">
                                     <xsl:attribute name="class">card-name-thai-small-white text-wrap float-start</xsl:attribute>
                                     <xsl:value-of select="menu_name_th" disable-output-escaping="yes" />
                                 </xsl:element>
@@ -238,15 +238,15 @@
                                     <xsl:value-of select="menu_price" disable-output-escaping="yes" />
                                 </xsl:element>
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">ingredient d-none</xsl:attribute>
                                 <xsl:value-of select="menu_ingredient" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">productDetail d-none</xsl:attribute>
                                 <xsl:value-of select="menu_detail" disable-output-escaping="yes" />
                             </xsl:element>
-                            <xsl:element name="div">
+                            <xsl:element name="p">
                                 <xsl:attribute name="class">preservation d-none</xsl:attribute>
                                 <xsl:value-of select="menu_preservation" disable-output-escaping="yes" />
                             </xsl:element>
@@ -281,23 +281,24 @@
                                 <!-- Test<br>Croissant -->
                             </h2>
 
-                            <button type="button" class="btn btn-primary rounded-pill grabMe-btn-modal  d-inline-block mt-5 float-end">Grab
+                            <button type="button"
+                                class="btn btn-primary rounded-pill grabMe-btn-modal d-inline-block mt-5  float-end">Grab
                                 Me!</button>
                         </div>
                         <button type="button" class="btn-close btn-close-custom position-absolute top-0 end-0 m-3"
                             data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="row w-100 h-auto modal-text mx-auto">
-                        <div class="col-5 modal-ingredient ps-2 ps-md-5 py-2">
+                        <p class="col-5 modal-ingredient ps-2 ps-md-5 py-2">
                             <!-- Pumpkins,<br>
                         Milk, <br> 
                         Butter, <br> 
                         Whipcream -->
-                        </div>
-                        <div class="col-7 modal-detail py-2">
+                        </p>
+                        <p class="col-7 modal-detail py-2">
                             <!-- Pumpkin is hidden missing piece to add sweet and mild taste in your favorite cupcakes.
                         Now, let’s grab this and enjoy more good to both your health and joy. -->
-                        </div>
+                        </p>
                     </div>
                     <div class="time-preserve mx-auto py-2 text-center">
                         <img src="./images2/modal-clock.png" alt="" class="clock-img mb-3 d-inline-block">

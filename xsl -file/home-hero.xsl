@@ -22,7 +22,7 @@
                         <xsl:value-of select="header_text" disable-output-escaping="yes" />
                     </xsl:element>
                     <div class="bar-light mt-lg-3 mb-4"></div>
-                    <xsl:element name="div">
+                    <xsl:element name="p">
                         <xsl:attribute name="id">weGetYou</xsl:attribute>
                         <xsl:attribute name="class">d-none d-lg-block</xsl:attribute>
                         <xsl:value-of select="content_text" disable-output-escaping="yes" />
