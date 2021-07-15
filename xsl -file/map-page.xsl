@@ -52,10 +52,10 @@
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">
-                                    card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0
+                                    card-text-shop d-flex justify-content-between  align-items-end  w-100 h-auto pt-1 position-absolute bottom-0
                                 </xsl:attribute>
                                 <xsl:element name="span">
-                                    <xsl:attribute name="class">float-start mt-1</xsl:attribute>
+                                    <xsl:attribute name="class">float-start ps-1 col-9 mt-1</xsl:attribute>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">shop</xsl:attribute>
                                         <xsl:value-of select="shop_name" disable-output-escaping="yes" />
@@ -67,7 +67,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">
-                                        float-end mb-1
+                                        float-end  col-3 mb-1
                                     </xsl:attribute>
                                     <xsl:element name="img">
                                         <xsl:attribute name="src">./images/placeholder.png</xsl:attribute>
@@ -115,10 +115,10 @@
                             </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">
-                                    card-text-shop   w-100 h-auto pt-1 position-absolute bottom-0
+                                    card-text-shop d-flex justify-content-between  align-items-end   w-100 h-auto pt-1 position-absolute bottom-0
                                 </xsl:attribute>
                                 <xsl:element name="span">
-                                    <xsl:attribute name="class">float-start mt-1</xsl:attribute>
+                                    <xsl:attribute name="class">float-start ps-1 col-9 mt-1</xsl:attribute>
                                     <xsl:element name="div">
                                         <xsl:attribute name="class">shop</xsl:attribute>
                                         <xsl:value-of select="shop_name" disable-output-escaping="yes" />
@@ -130,7 +130,7 @@
                                 </xsl:element>
                                 <xsl:element name="span">
                                     <xsl:attribute name="class">
-                                        float-end mb-1
+                                        float-end col-3 mb-1
                                     </xsl:attribute>
                                     <xsl:element name="img">
                                         <xsl:attribute name="src">./images/placeholder.png</xsl:attribute>

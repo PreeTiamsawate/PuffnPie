@@ -8,11 +8,16 @@ const cardBigs = document.querySelectorAll(".card-big");
 const cardSmalls = document.querySelectorAll(".card-small");
 const cardMobileNews = document.querySelectorAll(".card-mobile-new");
 const assignModal = function () {
-  modalImg.setAttribute("src", this.children[0].getAttribute("src"));
-  modalName.innerHTML = this.children[1].children[0].innerHTML;
-  modalIngredient.innerHTML = this.children[2].innerHTML;
-  modalDetail.innerHTML = this.children[3].innerHTML;
-  modalPreserve.innerHTML = this.children[4].innerHTML;
+  let n = 0;
+  if (this.children[1].tagName === "IMG") {
+    n = 1;
+  }
+
+  modalImg.setAttribute("src", this.children[n].getAttribute("src"));
+  modalName.innerHTML = this.children[n + 1].children[0].innerHTML;
+  modalIngredient.innerHTML = this.children[n + 2].innerHTML;
+  modalDetail.innerHTML = this.children[n + 3].innerHTML;
+  modalPreserve.innerHTML = this.children[n + 4].innerHTML;
 };
 
 for (cardBig of cardBigs) {
@@ -24,3 +29,4 @@ for (cardSmall of cardSmalls) {
 for (cardMobileNew of cardMobileNews) {
   cardMobileNew.addEventListener("click", assignModal);
 }
+console.log(typeof cardBigs[0].children[0].tagName);

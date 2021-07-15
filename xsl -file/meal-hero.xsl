@@ -100,6 +100,10 @@
                                 <xsl:attribute name="src"><xsl:value-of select="menu_image_mobile"/></xsl:attribute>
                                 <xsl:attribute name="class">d-block w-100 h-100 newMenu-card-img</xsl:attribute>
                             </xsl:element>
+                            <xsl:element name="img">
+                                <xsl:attribute name="src"><xsl:value-of select="######"/></xsl:attribute>
+                                <xsl:attribute name="class">d-none</xsl:attribute>
+                            </xsl:element>
                             <xsl:element name="div">
                                 <xsl:attribute name="class">newMenu-card-text w-100</xsl:attribute>
                                 <xsl:element name="h4">
