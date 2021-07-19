@@ -1,11 +1,11 @@
-const toGoShopParent = document.querySelector("#toGoShopParent");
-const toGoShops = Array.from(document.querySelectorAll(".toGoShop"));
+// const toGoShopParent = document.querySelector("#toGoShopParent");
+// const toGoShops = Array.from(document.querySelectorAll(".toGoShop"));
 const sitInShopParent = document.querySelector("#sitInShopParent");
 const sitInShops = Array.from(document.querySelectorAll(".sitInShop"));
-const toGoMap = document.querySelector("#toGo-map");
+// const toGoMap = document.querySelector("#toGo-map");
 const sitInMap = document.querySelector("#sitIn-map");
-console.log(toGoShopParent);
-console.log(toGoShops);
+// console.log(toGoShopParent);
+// console.log(toGoShops);
 function distance(lat1, lon1, lat2, lon2, unit) {
   if (lat1 == lat2 && lon1 == lon2) {
     return 0;
@@ -74,13 +74,13 @@ const showShopsByDistance = function () {
       lat: latitude,
       long: longitude,
     };
-    sortShops(
-      toGoShops,
-      toGoShopParent,
-      coordinate.lat,
-      coordinate.long,
-      toGoMap
-    );
+    // sortShops(
+    //   toGoShops,
+    //   toGoShopParent,
+    //   coordinate.lat,
+    //   coordinate.long,
+    //   toGoMap
+    // );
     sortShops(
       sitInShops,
       sitInShopParent,
